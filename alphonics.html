@@ -1,0 +1,2543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="application-name" content="Alphonics">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Alphonics">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#060504">
+<meta name="description" content="Alphonics — Delhi's own sound. Where acoustic soul collides with electric fury.">
+<meta name="msapplication-TileColor" content="#060504">
+
+<!-- PWA Manifest (inline via JS blob — single file PWA) -->
+<link rel="manifest" id="manifest-placeholder">
+
+<!-- Apple Touch Icons (inline SVG favicon) -->
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTA4MCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTA4MCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNNTE3LjEwOSAyNDAuMDczQzY5OS4xNzkgMjQwLjA3MyA4NDYuNzQ3IDM4Ni44MyA4NDYuNzQ3IDU2Ny44MjhDODQ2Ljc0NyA3NDguODI3IDY5OS4xNzkgODk1LjU4NCA1MTcuMTA5IDg5NS41ODRDMzM1LjA0IDg5NS41ODQgMTg3LjQ3MiA3NDguODI3IDE4Ny40NzIgNTY3LjgyOEMxODcuNDcyIDM4Ni44MyAzMzUuMDQgMjQwLjA3MyA1MTcuMTA5IDI0MC4wNzNaIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjUuODM0MjkiLz4KPHBhdGggZD0iTTc0OC41MzggODg5LjYyNEg4NzMuMDAzTDc4MS41OTkgNjkzLjIwM0g2NjIuOTY5TDc0OC41MzggODg5LjYyNFoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik00NjAuNzEyIDUwNS41MzNIMzM5LjE2NEw1MTguMDgyIDEzN0w3NjMuMTIzIDY0OC40NzNINTQ3LjI1NEw2MzcuNjg1IDg4OC42NTFMNDA1LjI4NiA1NTcuMDY5SDYwMi42OEw1MTguMDgyIDM3MC4zNzJMNDYwLjcxMiA1MDUuNTMzWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTI5Mi40OTMgODkxLjU2OUgxNjlMMzMyLjM2IDUyNy44OThMNDAxLjM5OSA2NDIuNjRMMjkyLjQ5MyA4OTEuNTY5WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTA4MCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTA4MCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNNTE3LjEwOSAyNDAuMDczQzY5OS4xNzkgMjQwLjA3MyA4NDYuNzQ3IDM4Ni44MyA4NDYuNzQ3IDU2Ny44MjhDODQ2Ljc0NyA3NDguODI3IDY5OS4xNzkgODk1LjU4NCA1MTcuMTA5IDg5NS41ODRDMzM1LjA0IDg5NS41ODQgMTg3LjQ3MiA3NDguODI3IDE4Ny40NzIgNTY3LjgyOEMxODcuNDcyIDM4Ni44MyAzMzUuMDQgMjQwLjA3MyA1MTcuMTA5IDI0MC4wNzNaIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjUuODM0MjkiLz4KPHBhdGggZD0iTTc0OC41MzggODg5LjYyNEg4NzMuMDAzTDc4MS41OTkgNjkzLjIwM0g2NjIuOTY5TDc0OC41MzggODg5LjYyNFoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik00NjAuNzEyIDUwNS41MzNIMzM5LjE2NEw1MTguMDgyIDEzN0w3NjMuMTIzIDY0OC40NzNINTQ3LjI1NEw2MzcuNjg1IDg4OC42NTFMNDA1LjI4NiA1NTcuMDY5SDYwMi42OEw1MTguMDgyIDM3MC4zNzJMNDYwLjcxMiA1MDUuNTMzWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTI5Mi40OTMgODkxLjU2OUgxNjlMMzMyLjM2IDUyNy44OThMNDAxLjM5OSA2NDIuNjRMMjkyLjQ5MyA4OTEuNTY5WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alphonics — Sound Redefined</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Rajdhani:wght@300;400;500;600;700&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
+<style>
+:root {
+  --gold: #ffcc00;
+  --gold-dim: #b38f00;
+  --gold-glow: rgba(255,204,0,0.1);
+  --white: #f0ece4;
+  --off: #b8b0a4;
+  --bg: #060504;
+  --bg2: #0c0b09;
+  --bg3: #111009;
+  --line: rgba(255,204,0,0.14);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--white);
+  font-family: 'Rajdhani', sans-serif;
+  cursor: crosshair;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+  pointer-events: none;
+  z-index: 9000;
+  opacity: 0.55;
+}
+
+/* ═══════════════════════════════════
+   LOGO STYLES
+═══════════════════════════════════ */
+.nav-wordmark {
+  height: 22px;
+  width: auto;
+  display: block;
+}
+.nav-wordmark path { fill: var(--gold); }
+.nav-logo {
+  display: flex;
+  align-items: center;
+  font-family: unset;
+  font-size: unset;
+  letter-spacing: unset;
+  color: var(--gold);
+}
+.footer-logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--gold);
+}
+.footer-wordmark {
+  height: 10px;
+  width: auto;
+  display: block;
+  opacity: 0.35;
+}
+.footer-wordmark path { fill: var(--gold); }
+.hero-logo-watermark {
+  position: absolute;
+  right: -4vw;
+  top: 50%;
+  transform: translateY(-50%);
+  width: clamp(280px, 42vw, 560px);
+  height: auto;
+  pointer-events: none;
+  opacity: 0.04;
+  z-index: 0;
+}
+.hero-logo-watermark path { fill: white; }
+.hero-logo-watermark path[stroke="white"] { fill: none; stroke: white; }
+.modal-brand-mark {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 52px;
+  height: 52px;
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: 2;
+}
+.modal-brand-mark path { fill: white; }
+.modal-brand-mark path[stroke="white"] { fill: none; stroke: white; }
+.pwa-banner-icon svg {
+  width: 28px;
+  height: 28px;
+}
+.pwa-banner-icon svg path { fill: var(--gold); }
+.pwa-banner-icon svg path[stroke="white"] { fill: none; stroke: var(--gold); }
+
+/* ── NAV ── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 8000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  background: linear-gradient(to bottom, rgba(6,5,4,0.97) 0%, transparent 100%);
+}
+
+.nav-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.nav-dots {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+}
+
+.nav-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  border: 1px solid var(--gold-dim);
+  cursor: pointer;
+  transition: background 0.3s, border-color 0.3s, transform 0.3s;
+  position: relative;
+}
+
+.nav-dot::after {
+  content: attr(data-label);
+  position: absolute;
+  top: 170%; left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Space Mono', monospace;
+  font-size: 0.44rem;
+  letter-spacing: 0.14em;
+  color: var(--off);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.25s;
+  text-transform: uppercase;
+}
+
+.nav-dot:hover::after { opacity: 1; }
+
+.nav-dot.active {
+  background: var(--gold);
+  border-color: var(--gold);
+  transform: scale(1.5);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.nav-btn {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.16em;
+  text-decoration: none;
+  padding: 0.38rem 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+  border: none;
+  background: none;
+  white-space: nowrap;
+}
+
+.btn-donate {
+  color: var(--gold);
+  border: 1px solid rgba(255,204,0,0.35);
+}
+.btn-donate:hover { background: rgba(255,204,0,0.1); border-color: var(--gold); }
+
+.btn-hire {
+  color: var(--white);
+  border: 1px solid rgba(240,236,228,0.22);
+}
+.btn-hire:hover { background: rgba(240,236,228,0.08); border-color: var(--white); }
+
+.btn-ig {
+  color: var(--gold);
+  border: 1px solid var(--gold-dim);
+}
+.btn-ig:hover { background: var(--gold); color: var(--bg); }
+
+/* ── PROGRESS BAR ── */
+.progress-bar {
+  position: fixed;
+  top: 0; left: 0;
+  height: 2px;
+  background: linear-gradient(to right, var(--gold-dim), var(--gold));
+  z-index: 8500;
+  transition: width 0.72s cubic-bezier(0.77,0,0.18,1);
+  width: 0%;
+}
+
+/* ── TRACK ── */
+#track {
+  display: flex;
+  width: fit-content;
+  height: 100vh;
+  will-change: transform;
+  transition: transform 0.75s cubic-bezier(0.77, 0, 0.18, 1);
+}
+
+/* ── PANEL BASE ── */
+.panel {
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.v-label {
+  position: absolute;
+  right: 2.2rem; bottom: 3rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.5rem;
+  letter-spacing: 0.4em;
+  color: rgba(255,204,0,0.25);
+  writing-mode: vertical-rl;
+  text-transform: uppercase;
+}
+
+.panel-num {
+  position: absolute;
+  left: 3rem; bottom: 3rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.5rem;
+  letter-spacing: 0.2em;
+  color: rgba(255,204,0,0.2);
+}
+
+/* ── SHARED TEXT ── */
+.section-eyebrow {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.38em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+.section-heading {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3.2rem, 6.5vw, 6rem);
+  line-height: 0.9;
+  color: var(--white);
+  letter-spacing: 0.02em;
+}
+
+.gold-rule {
+  display: block;
+  width: 50px; height: 2px;
+  background: var(--gold);
+  margin: 1.8rem 0;
+}
+
+.body-text {
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.95;
+  color: var(--white);
+  letter-spacing: 0.03em;
+  opacity: 0.82;
+}
+
+/* ═══════════════════════════════════
+   PANEL 1 — HERO
+═══════════════════════════════════ */
+#p1 { background: var(--bg); }
+
+.hero-bg-lines {
+  position: absolute; inset: 0; pointer-events: none;
+}
+.hero-bg-lines span {
+  position: absolute; top: 0; width: 1px; height: 100%;
+  background: linear-gradient(to bottom, transparent, var(--line) 45%, var(--line) 55%, transparent);
+  animation: lineFall 7s ease-in-out infinite;
+}
+.hero-bg-lines span:nth-child(1){left:14%;animation-delay:0s}
+.hero-bg-lines span:nth-child(2){left:28%;animation-delay:1.3s;opacity:.4}
+.hero-bg-lines span:nth-child(3){left:50%;animation-delay:3s}
+.hero-bg-lines span:nth-child(4){left:70%;animation-delay:4.8s;opacity:.5}
+.hero-bg-lines span:nth-child(5){left:86%;animation-delay:2s;opacity:.3}
+
+@keyframes lineFall {
+  0%{transform:translateY(-100%);opacity:0}
+  15%{opacity:1} 85%{opacity:1}
+  100%{transform:translateY(100%);opacity:0}
+}
+
+.hero-glow {
+  position: absolute;
+  width: 70vw; height: 70vh;
+  background: radial-gradient(ellipse at center, rgba(255,204,0,0.07) 0%, transparent 72%);
+  top: 15%; left: 15%;
+  pointer-events: none;
+}
+
+.hero-content {
+  padding: 7rem 4rem 0;
+  position: relative; z-index: 1;
+  width: 100%;
+}
+
+.hero-eyebrow {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.63rem;
+  letter-spacing: 0.48em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.4s forwards;
+}
+
+.hero-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(7rem, 20vw, 20rem);
+  line-height: 0.85;
+  letter-spacing: -0.01em;
+  color: var(--white);
+  opacity: 0;
+  animation: fadeUp 1s 0.6s forwards;
+}
+
+.hero-title .stroke {
+  -webkit-text-stroke: 1.5px var(--gold);
+  color: transparent;
+}
+
+.hero-sub {
+  margin-top: 2.5rem;
+  font-size: 1.03rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: var(--white);
+  max-width: 360px;
+  line-height: 1.9;
+  opacity: 0.78;
+  opacity: 0;
+  animation: fadeUp 0.9s 0.9s forwards;
+}
+
+.hero-cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1rem;
+  opacity: 0;
+  animation: fadeUp 0.9s 1.1s forwards;
+}
+
+.btn-primary {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--bg);
+  background: var(--gold);
+  border: none;
+  padding: 0.78rem 1.7rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+.btn-primary:hover { opacity: 0.82; }
+
+.btn-outline {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--off);
+  background: transparent;
+  border: 1px solid var(--gold-dim);
+  padding: 0.78rem 1.7rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s, border-color 0.3s;
+}
+.btn-outline:hover { color: var(--gold); border-color: var(--gold); }
+
+.hero-scroll-hint {
+  position: absolute;
+  right: 4rem; bottom: 5rem;
+  display: flex; flex-direction: column; align-items: center; gap: 0.8rem;
+  opacity: 0;
+  animation: fadeUp 1s 1.5s forwards;
+  cursor: pointer; z-index: 2;
+}
+.hero-scroll-hint span {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.5rem;
+  letter-spacing: 0.35em;
+  color: var(--off);
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+}
+.scroll-line {
+  width: 1px; height: 75px;
+  background: linear-gradient(to bottom, var(--gold), transparent);
+  animation: pulse 2.2s ease-in-out infinite;
+}
+
+.wave-svg-deco {
+  position: absolute; bottom: 5rem; left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.07; pointer-events: none; width: 55vw;
+}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pulse{0%,100%{opacity:.3;transform:scaleY(1)}50%{opacity:1;transform:scaleY(1.15)}}
+
+/* ═══════════════════════════════════
+   PANEL 2 — ABOUT
+═══════════════════════════════════ */
+#p2 { background: var(--bg2); border-left: 1px solid var(--line); }
+
+.about-deco {
+  position: absolute; top: -30%; right: -8%;
+  width: 45vw; height: 160%;
+  border-left: 1px solid rgba(255,204,0,0.05);
+  transform: rotate(-9deg); transform-origin: top right;
+  pointer-events: none;
+}
+
+.about-inner {
+  padding: 0 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem;
+  align-items: center;
+  width: 100%; position: relative; z-index: 1;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--line);
+}
+
+.stat-cell {
+  background: var(--bg2);
+  padding: 2.2rem 2rem;
+  position: relative; overflow: hidden;
+  transition: background 0.3s; cursor: default;
+}
+.stat-cell:hover { background: var(--bg3); }
+.stat-cell::after {
+  content: '';
+  position: absolute; bottom: 0; left: 0;
+  width: 0; height: 1px;
+  background: var(--gold);
+  transition: width 0.4s;
+}
+.stat-cell:hover::after { width: 100%; }
+.stat-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.8rem; color: var(--gold); line-height: 1; display: block;
+}
+.stat-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.58rem; letter-spacing: 0.22em;
+  color: var(--white); text-transform: uppercase; margin-top: 0.3rem; display: block; opacity: 0.6;
+}
+
+/* ═══════════════════════════════════
+   PANEL 3 — MEMBERS
+═══════════════════════════════════ */
+#p3 { background: var(--bg); border-left: 1px solid var(--line); align-items: stretch; }
+
+.members-inner {
+  width: 100%; height: 100%;
+  display: flex; flex-direction: column;
+  padding: 6rem 3rem 3rem;
+  position: relative; z-index: 1;
+}
+.members-header { margin-bottom: 2.5rem; }
+.members-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
+  background: var(--line);
+  overflow: hidden; min-height: 0;
+}
+
+.member-card {
+  background: var(--bg); padding: 2rem 1.8rem;
+  position: relative; overflow: hidden;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  transition: background 0.35s; cursor: default;
+}
+.member-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: var(--gold);
+  transform: scaleX(0); transform-origin: left;
+  transition: transform 0.45s;
+}
+.member-card:hover { background: var(--bg3); }
+.member-card:hover::before { transform: scaleX(1); }
+
+.bg-letter {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(5rem, 9vw, 9rem);
+  color: rgba(255,204,0,0.04);
+  line-height: 1; pointer-events: none;
+  transition: color 0.35s; user-select: none;
+}
+.member-card:hover .bg-letter { color: rgba(255,204,0,0.08); }
+
+.member-idx {
+  position: absolute; top: 1.4rem; right: 1.4rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.48rem; letter-spacing: 0.2em;
+  color: rgba(255,204,0,0.2);
+}
+.member-avatar {
+  width: 48px; height: 48px;
+  border: 1px solid var(--gold-dim); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Bebas Neue', sans-serif; font-size: 0.95rem; color: var(--gold);
+  margin-bottom: 1.5rem;
+  transition: border-color 0.3s, background 0.3s; flex-shrink: 0;
+  overflow: hidden;
+}
+.member-avatar--photo { background: var(--bg2); }
+.member-avatar--photo img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center top;
+  display: block; border-radius: 50%;
+  filter: grayscale(30%) contrast(1.05);
+  transition: filter 0.35s;
+}
+.member-card:hover .member-avatar--photo img { filter: grayscale(0%) contrast(1.1); }
+.member-card:hover .member-avatar { border-color: var(--gold); background: rgba(255,204,0,0.08); }
+.member-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.2rem; letter-spacing: 0.04em; color: var(--white); line-height: 1.1;
+}
+.member-role {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.55rem; letter-spacing: 0.14em;
+  color: var(--gold); text-transform: uppercase; line-height: 1.8; margin-top: 0.4rem;
+}
+.member-badge {
+  display: inline-block; margin-top: 0.6rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.44rem; letter-spacing: 0.12em;
+  color: var(--bg); background: var(--gold);
+  padding: 0.18rem 0.5rem; text-transform: uppercase;
+}
+
+/* ═══════════════════════════════════
+   PANEL 4 — SOUND
+═══════════════════════════════════ */
+#p4 { background: var(--bg2); border-left: 1px solid var(--line); }
+
+.sound-deco {
+  position: absolute; top: -30%; left: -10%;
+  width: 50vw; height: 160%;
+  border-right: 1px solid rgba(255,204,0,0.04);
+  transform: rotate(9deg); transform-origin: bottom left;
+  pointer-events: none;
+}
+.sound-inner {
+  padding: 0 6rem; width: 100%;
+  display: grid; grid-template-columns: 1fr 1.2fr; gap: 7rem;
+  align-items: center; position: relative; z-index: 1;
+}
+.genre-list { list-style: none; margin-top: 2rem; }
+.genre-list li {
+  display: flex; align-items: center; gap: 1rem;
+  padding: 1rem 0; border-bottom: 1px solid var(--line);
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.1rem; font-weight: 700; letter-spacing: 0.14em;
+  color: var(--white); text-transform: uppercase;
+  transition: color 0.3s, padding-left 0.3s; cursor: default; opacity: 0.65;
+}
+.genre-list li:hover { color: var(--white); padding-left: 0.5rem; }
+.g-dot { width: 5px; height: 5px; background: var(--gold); border-radius: 50%; flex-shrink: 0; }
+
+.wave-bars {
+  display: flex; align-items: center; gap: 3px; height: 78px; margin-bottom: 2.5rem;
+}
+.wave-bar {
+  flex: 1; background: var(--gold); border-radius: 1px;
+  animation: waveB 1.4s ease-in-out infinite;
+}
+@keyframes waveB {
+  0%,100%{transform:scaleY(0.2);opacity:.4}
+  50%{transform:scaleY(1);opacity:.9}
+}
+
+.inst-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); }
+.inst-cell { background: var(--bg2); padding: 1.3rem 1.4rem; transition: background 0.3s; cursor: default; }
+.inst-cell:hover { background: var(--bg3); }
+.inst-name { font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; color: var(--white); letter-spacing: 0.04em; }
+.inst-sub { font-family: 'Space Mono', monospace; font-size: 0.52rem; letter-spacing: 0.14em; color: var(--white); text-transform: uppercase; margin-top: 0.25rem; opacity: 0.55; }
+
+/* ═══════════════════════════════════
+   PANEL 5 — CONNECT
+═══════════════════════════════════ */
+#p5 { background: var(--bg); border-left: 1px solid var(--line); }
+
+.connect-bg-text {
+  position: absolute; right: -3rem; top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(10rem, 20vw, 22rem);
+  color: rgba(255,204,0,0.03);
+  letter-spacing: 0.02em; pointer-events: none;
+  user-select: none; white-space: nowrap; line-height: 1;
+}
+.connect-inner { width: 100%; height: 100%; position: relative; z-index: 1; }
+.connect-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3.5rem, 7vw, 7rem); line-height: 0.88; color: var(--white);
+}
+.connect-handle {
+  display: inline-flex; align-items: center; gap: 1.2rem; margin-top: 3rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(1.8rem, 3.5vw, 3rem); letter-spacing: 0.08em; color: var(--gold);
+  text-decoration: none; border: 1px solid var(--gold-dim);
+  padding: 1.2rem 2.8rem; transition: background 0.3s, color 0.3s;
+}
+.connect-handle:hover { background: var(--gold); color: var(--bg); }
+.connect-body {
+  margin-top: 2.5rem; font-size: 1rem; font-weight: 300;
+  letter-spacing: 0.06em; color: var(--white); line-height: 1.9; max-width: 380px; opacity: 0.75; font-weight: 400;
+}
+.connect-tag {
+  margin-top: 2.5rem; font-family: 'Space Mono', monospace;
+  font-size: 0.54rem; letter-spacing: 0.28em;
+  color: rgba(255,204,0,0.6); text-transform: uppercase;
+}
+
+.connect-actions {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* ── CO-ARTISTS GALLERY ── */
+.connect-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.connect-left {
+  padding: 0 5rem 0 6rem;
+  border-right: 1px solid var(--line);
+  position: relative; z-index: 1;
+}
+
+.connect-right {
+  padding: 0 4rem 0 5rem;
+  position: relative; z-index: 1;
+}
+
+.connect-right {
+  padding: 5rem 3rem 3rem 4rem;
+  position: relative; z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.coartists-eyebrow {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.54rem;
+  letter-spacing: 0.38em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+  flex-shrink: 0;
+}
+
+.coartists-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  padding-bottom: 1rem;
+  scrollbar-width: none;
+}
+.coartists-grid::-webkit-scrollbar { display: none; }
+
+/* ── PORTRAIT CARD ── */
+.coartist-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  width: calc(16.66% - 0.8rem);
+  min-width: 80px;
+  cursor: default;
+  transition: transform 0.25s;
+}
+.coartist-card:hover { transform: translateY(-3px); }
+
+.portrait-frame {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  border: 1px solid var(--line);
+  background: var(--bg2);
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+.coartist-card:hover .portrait-frame { border-color: var(--gold-dim); }
+
+.portrait-ph {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  background: linear-gradient(160deg, var(--bg3) 0%, var(--bg2) 100%);
+}
+
+.portrait-ph img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.portrait-initials {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.4rem;
+  color: rgba(255,204,0,0.25);
+  line-height: 1;
+}
+
+.portrait-upload-hint {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.36rem;
+  letter-spacing: 0.12em;
+  color: rgba(255,204,0,0.45);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 0.3rem;
+}
+
+.portrait-frame::before,
+.portrait-frame::after {
+  content: '';
+  position: absolute;
+  width: 10px; height: 10px;
+  border-color: var(--gold-dim);
+  border-style: solid;
+  z-index: 1;
+  transition: border-color 0.3s;
+}
+.portrait-frame::before { top: 0; left: 0; border-width: 1.5px 0 0 1.5px; }
+.portrait-frame::after  { bottom: 0; right: 0; border-width: 0 1.5px 1.5px 0; }
+.coartist-card:hover .portrait-frame::before,
+.coartist-card:hover .portrait-frame::after { border-color: var(--gold); }
+
+.card-name {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  text-align: center;
+  line-height: 1.25;
+}
+
+/* ═══════════════════════════════════
+   PANEL 6 — DONATE
+═══════════════════════════════════ */
+#p6 { background: var(--bg2); border-left: 1px solid var(--line); align-items: stretch; }
+
+.donate-inner {
+  width: 100%; height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  position: relative; z-index: 1;
+}
+
+/* Left side — quotes + intro */
+.donate-left {
+  padding: 6rem 4rem 4rem 5rem;
+  display: flex; flex-direction: column; justify-content: center;
+  border-right: 1px solid var(--line);
+  position: relative; overflow: hidden;
+}
+
+.donate-bg-symbol {
+  position: absolute; bottom: -2rem; left: -2rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20rem; line-height: 1;
+  color: rgba(255,204,0,0.03);
+  user-select: none; pointer-events: none;
+}
+
+.donate-intro {
+  font-size: 1.05rem; font-weight: 400;
+  color: var(--white); line-height: 1.9; margin-top: 1.2rem; max-width: 420px; opacity: 0.78;
+}
+
+.quotes-stack { margin-top: 2.8rem; display: flex; flex-direction: column; gap: 1.6rem; }
+
+.quote-block {
+  padding: 1.4rem 1.6rem;
+  border-left: 2px solid var(--gold);
+  background: rgba(255,204,0,0.04);
+  position: relative;
+}
+
+.quote-mark {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem; color: var(--gold); opacity: 0.25;
+  line-height: 0; position: absolute; top: 1.4rem; right: 1.2rem;
+}
+
+.quote-text {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem; font-weight: 500;
+  color: var(--white); line-height: 1.65; letter-spacing: 0.04em;
+  font-style: italic;
+}
+
+.quote-attr {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.56rem; letter-spacing: 0.18em;
+  color: var(--gold); text-transform: uppercase;
+  margin-top: 0.6rem; display: block;
+}
+
+/* Right side — QR + bank details */
+.donate-right {
+  padding: 6rem 5rem 4rem 4rem;
+  display: flex; flex-direction: column; justify-content: center;
+  gap: 2.5rem;
+}
+
+.qr-wrapper {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 1.2rem;
+}
+
+.qr-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.56rem; letter-spacing: 0.35em;
+  color: var(--gold); text-transform: uppercase;
+}
+
+.qr-frame {
+  background: #fff;
+  padding: 14px;
+  display: inline-block;
+  border: 2px solid var(--gold-dim);
+  position: relative;
+}
+
+/* Corner accents on QR frame */
+.qr-frame::before, .qr-frame::after {
+  content: '';
+  position: absolute;
+  width: 14px; height: 14px;
+  border-color: var(--gold);
+  border-style: solid;
+}
+.qr-frame::before { top: -2px; left: -2px; border-width: 2px 0 0 2px; }
+.qr-frame::after  { bottom: -2px; right: -2px; border-width: 0 2px 2px 0; }
+
+.qr-note {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.5rem; letter-spacing: 0.18em;
+  color: var(--off); text-transform: uppercase; margin-top: 0.4rem;
+}
+
+/* Bank details */
+.bank-block {
+  display: flex; flex-direction: column; gap: 1px;
+  background: var(--line);
+}
+
+.bank-row {
+  display: flex;
+  background: var(--bg2);
+  transition: background 0.25s;
+}
+.bank-row:hover { background: var(--bg3); }
+
+.bank-key {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.56rem; letter-spacing: 0.13em;
+  color: var(--gold); text-transform: uppercase;
+  padding: 0.85rem 1.2rem;
+  width: 140px; flex-shrink: 0;
+  border-right: 1px solid var(--line);
+  display: flex; align-items: center;
+}
+
+.bank-val {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.92rem; font-weight: 600;
+  color: var(--white); letter-spacing: 0.04em;
+  padding: 0.85rem 1.2rem;
+  display: flex; align-items: center;
+}
+
+.upi-pill {
+  display: inline-block;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.52rem; letter-spacing: 0.12em;
+  color: var(--bg); background: var(--gold);
+  padding: 0.2rem 0.6rem; margin-left: 0.7rem;
+  text-transform: uppercase;
+}
+
+/* ═══════════════════════════════════
+   PANEL 7 — HIRE US (CONTACT FORM)
+═══════════════════════════════════ */
+#p7 { background: var(--bg); border-left: 1px solid var(--line); align-items: stretch; }
+
+.hire-inner {
+  width: 100%; height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 0;
+  position: relative; z-index: 1;
+}
+
+.hire-left {
+  padding: 6rem 4rem 4rem 5rem;
+  display: flex; flex-direction: column; justify-content: center;
+  border-right: 1px solid var(--line);
+  position: relative; overflow: hidden;
+}
+
+.hire-bg-text {
+  position: absolute; bottom: -3rem; left: -2rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18rem; line-height: 1;
+  color: rgba(255,204,0,0.03);
+  user-select: none; pointer-events: none;
+}
+
+.hire-sub {
+  font-size: 1.05rem; font-weight: 400;
+  color: var(--white); line-height: 1.9; margin-top: 1.2rem; max-width: 400px; opacity: 0.78;
+}
+
+.hire-details { margin-top: 3rem; display: flex; flex-direction: column; gap: 1.2rem; }
+
+.hire-detail-row {
+  display: flex; align-items: flex-start; gap: 1rem;
+}
+
+.hd-icon {
+  width: 32px; height: 32px; flex-shrink: 0;
+  border: 1px solid var(--gold-dim); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.75rem; margin-top: 0.15rem;
+}
+
+.hd-text {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.95rem; font-weight: 400; color: var(--white); line-height: 1.7; opacity: 0.72;
+}
+
+.hd-text strong { font-weight: 600; color: var(--white); display: block; letter-spacing: 0.06em; }
+
+/* Contact form */
+.hire-right {
+  padding: 5rem 5rem 4rem 4rem;
+  display: flex; flex-direction: column; justify-content: center;
+}
+
+.form-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.2rem; letter-spacing: 0.05em;
+  color: var(--white); margin-bottom: 2rem;
+}
+
+.contact-form { display: flex; flex-direction: column; gap: 1px; }
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; }
+
+.field-wrap { display: flex; flex-direction: column; background: var(--line); }
+
+.field-wrap label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.5rem; letter-spacing: 0.22em;
+  color: var(--gold); text-transform: uppercase;
+  padding: 0.75rem 1rem 0;
+  background: var(--bg);
+}
+
+.field-wrap input,
+.field-wrap select,
+.field-wrap textarea {
+  background: var(--bg);
+  border: none; outline: none;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.95rem; font-weight: 500;
+  color: var(--white);
+  padding: 0.4rem 1rem 0.75rem;
+  resize: none; width: 100%;
+  letter-spacing: 0.04em;
+  transition: background 0.25s;
+  cursor: text;
+  -webkit-appearance: none; appearance: none;
+}
+
+.field-wrap input:focus,
+.field-wrap select:focus,
+.field-wrap textarea:focus {
+  background: var(--bg3);
+  outline: none;
+}
+
+.field-wrap input::placeholder,
+.field-wrap textarea::placeholder {
+  color: rgba(240,236,228,0.35);
+  font-weight: 300;
+}
+
+.field-wrap select option { background: var(--bg3); color: var(--white); }
+
+.form-submit {
+  margin-top: 1px;
+  border: none; outline: none;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.62rem; letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--bg);
+  background: var(--gold);
+  padding: 1.1rem 2rem;
+  cursor: crosshair;
+  width: 100%;
+  transition: opacity 0.3s, letter-spacing 0.3s;
+}
+.form-submit:hover { opacity: 0.85; letter-spacing: 0.35em; }
+
+.form-note {
+  margin-top: 0.8rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.48rem; letter-spacing: 0.18em;
+  color: rgba(240,236,228,0.5); text-transform: uppercase; text-align: center;
+}
+
+/* ── FOOTER STRIP ── */
+.footer-strip {
+  position: fixed; bottom: 6px; left: 0; right: 0;
+  display: flex; justify-content: space-between;
+  padding: 0 3rem; z-index: 7000; pointer-events: none;
+}
+.footer-strip span {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.48rem; letter-spacing: 0.2em;
+  color: rgba(255,204,0,0.2); text-transform: uppercase;
+}
+
+/* ── HINT ── */
+.kbd-hint {
+  position: fixed; bottom: 3rem; left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Space Mono', monospace;
+  font-size: 0.5rem; letter-spacing: 0.28em;
+  color: rgba(255,204,0,0.28); text-transform: uppercase;
+  z-index: 7000;
+  animation: hintOut 3.5s 2.5s forwards;
+  white-space: nowrap; pointer-events: none;
+}
+@keyframes hintOut{0%{opacity:1}80%{opacity:1}100%{opacity:0}}
+
+/* ═══════════════════════════════════
+   ARTIST PROFILE MODAL
+═══════════════════════════════════ */
+.artist-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9500;
+  display: flex;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.45s cubic-bezier(0.77,0,0.18,1);
+}
+.artist-modal.open {
+  opacity: 1;
+  pointer-events: all;
+}
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(6,5,4,0.88);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.modal-panel {
+  position: absolute;
+  top: 0; right: 0;
+  width: 72vw;
+  height: 100vh;
+  background: var(--bg);
+  border-left: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  transform: translateX(100%);
+  transition: transform 0.52s cubic-bezier(0.77,0,0.18,1);
+  overflow: hidden;
+}
+.artist-modal.open .modal-panel { transform: translateX(0); }
+.modal-close {
+  position: absolute;
+  top: 1.8rem; right: 2rem;
+  z-index: 10;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.52rem;
+  letter-spacing: 0.3em;
+  color: var(--off);
+  background: none;
+  border: 1px solid var(--line);
+  padding: 0.4rem 0.9rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: color 0.25s, border-color 0.25s;
+}
+.modal-close:hover { color: var(--gold); border-color: var(--gold-dim); }
+.modal-left {
+  position: relative;
+  background: var(--bg2);
+  border-right: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 3rem;
+  overflow: hidden;
+}
+.modal-photo-area {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-photo-placeholder {
+  width: 55%;
+  aspect-ratio: 3/4;
+  border: 1px solid var(--line);
+  background: var(--bg3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  position: relative;
+}
+.modal-photo-placeholder::before,
+.modal-photo-placeholder::after {
+  content: '';
+  position: absolute;
+  width: 18px; height: 18px;
+  border-color: var(--gold-dim);
+  border-style: solid;
+}
+.modal-photo-placeholder::before { top: -1px; left: -1px; border-width: 2px 0 0 2px; }
+.modal-photo-placeholder::after  { bottom: -1px; right: -1px; border-width: 0 2px 2px 0; }
+.modal-photo-placeholder img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center top; display: block;
+}
+.modal-ph-initials {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 4rem;
+  color: rgba(255,204,0,0.12);
+  line-height: 1;
+}
+.modal-ph-hint {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.44rem;
+  letter-spacing: 0.22em;
+  color: rgba(255,204,0,0.5);
+  text-transform: uppercase;
+}
+.modal-bg-name {
+  position: absolute;
+  bottom: -1.5rem; left: -1rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(4rem, 8vw, 7rem);
+  color: rgba(255,204,0,0.04);
+  line-height: 1;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+}
+.modal-index {
+  position: absolute;
+  top: 2rem; left: 2.5rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.5rem;
+  letter-spacing: 0.25em;
+  color: rgba(255,204,0,0.2);
+}
+.modal-right {
+  padding: 5rem 3.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.modal-right::-webkit-scrollbar { display: none; }
+.modal-eyebrow {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.52rem;
+  letter-spacing: 0.4em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+.modal-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.8rem, 4.5vw, 4.2rem);
+  line-height: 0.92;
+  color: var(--white);
+  letter-spacing: 0.02em;
+}
+.modal-role {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.56rem;
+  letter-spacing: 0.28em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+.modal-rule {
+  display: block;
+  width: 40px; height: 2px;
+  background: var(--gold);
+  margin: 1.6rem 0;
+}
+.modal-bio {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.95;
+  color: var(--off);
+  letter-spacing: 0.03em;
+  max-width: 380px;
+}
+.modal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.8rem;
+}
+.modal-tag {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.46rem;
+  letter-spacing: 0.18em;
+  color: var(--gold-dim);
+  border: 1px solid var(--line);
+  padding: 0.3rem 0.75rem;
+  text-transform: uppercase;
+  transition: border-color 0.25s, color 0.25s;
+  cursor: default;
+}
+.modal-tag:hover { border-color: var(--gold-dim); color: var(--gold); }
+.modal-socials {
+  margin-top: 2.2rem;
+  display: flex;
+  gap: 0.8rem;
+}
+.modal-ig-btn {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.52rem;
+  letter-spacing: 0.18em;
+  color: var(--gold);
+  border: 1px solid var(--gold-dim);
+  padding: 0.5rem 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background 0.25s, color 0.25s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.modal-ig-btn:hover { background: var(--gold); color: var(--bg); }
+.member-card { cursor: pointer; }
+.member-card::after {
+  content: 'View Profile →';
+  position: absolute;
+  bottom: 1.2rem; left: 1.8rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.42rem;
+  letter-spacing: 0.18em;
+  color: var(--gold);
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.member-card:hover::after { opacity: 1; }
+
+/* ═══════════════════════════════════
+   RESPONSIVE — TABLET  (≤1024px)
+═══════════════════════════════════ */
+@media (max-width: 1024px) {
+  .about-inner  { padding: 0 3rem; gap: 4rem; }
+  .sound-inner  { padding: 0 3rem; gap: 4rem; }
+  .donate-left, .donate-right { padding: 5rem 2.5rem 3rem; }
+  .hire-left,   .hire-right   { padding: 5rem 2.5rem 3rem; }
+  .connect-left  { padding: 0 3rem 0 3.5rem; }
+  .connect-right { padding: 4rem 2rem 3rem 3rem; }
+  .coartist-card { width: calc(25% - 0.7rem); }
+  .modal-panel   { width: 88vw; }
+}
+
+/* ═══════════════════════════════════
+   MOBILE  (≤768px)
+   Panels stack vertically.
+   Normal page scroll — no horizontal.
+═══════════════════════════════════ */
+@media (max-width: 768px) {
+
+  /* ── CORE: turn off horizontal track ── */
+  html, body { overflow: auto; overflow-x: hidden; height: auto; }
+
+  #track {
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .panel {
+    width: 100%;
+    height: auto;
+    min-height: 100svh;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: visible;
+    border-left: none;
+    border-bottom: 1px solid var(--line);
+  }
+
+  /* ── NAV ── */
+  nav { padding: 1rem 1.4rem; position: sticky; }
+  .nav-logo { font-size: 1.3rem; }
+  .nav-wordmark { height: 18px; }
+  .hero-logo-watermark { width: clamp(200px, 70vw, 320px); right: 50%; transform: translate(50%, -50%); opacity: 0.03; }
+  .nav-dots { display: none; }
+  .nav-btn  { font-size: 0.5rem; padding: 0.32rem 0.7rem; }
+  .progress-bar { display: none; }
+  .kbd-hint     { display: none; }
+  .v-label      { display: none; }
+  .panel-num    { display: none; }
+  .footer-strip { position: relative; padding: 1rem 1.4rem; margin-top: 0; }
+
+  /* ── P1: HERO ── */
+  #p1 { min-height: 100svh; justify-content: flex-start; }
+  .hero-content { padding: 6rem 1.5rem 3.5rem; width: 100%; }
+  .hero-title   { font-size: clamp(4.5rem, 20vw, 7rem); }
+  .hero-sub     { font-size: 0.92rem; max-width: 100%; margin-top: 1.2rem; }
+  .hero-cta     { flex-direction: column; gap: 0.7rem; margin-top: 1.5rem; }
+  .btn-primary, .btn-outline {
+    width: 100%; text-align: center;
+    padding: 0.9rem 1rem; font-size: 0.56rem; display: block;
+  }
+  .hero-scroll-hint { display: none; }
+  .wave-svg-deco    { display: none; }
+
+  /* ── P2: ABOUT ── */
+  #p2 { min-height: auto; }
+  .about-inner {
+    grid-template-columns: 1fr;
+    padding: 3.5rem 1.5rem 3rem;
+    gap: 2.5rem; height: auto;
+  }
+  .section-heading { font-size: clamp(2.2rem, 9vw, 3.2rem); }
+  .stat-grid { grid-template-columns: 1fr 1fr; }
+  .stat-num  { font-size: 2.8rem; }
+  .body-text { font-size: 0.95rem; }
+
+  /* ── P3: MEMBERS ── */
+  #p3 { min-height: auto; align-items: stretch; }
+  .members-inner { padding: 3.5rem 1.2rem 3rem; flex: none; }
+  .members-header { margin-bottom: 1.8rem; }
+  .members-grid {
+    grid-template-columns: repeat(2, 1fr);
+    flex: none; height: auto; overflow: visible;
+  }
+  .member-card  { padding: 1.4rem 1rem; min-height: 160px; }
+  .member-name  { font-size: 1rem; }
+  .member-role  { font-size: 0.44rem; }
+  .member-card::after { display: none; }
+
+  /* ── P4: SOUND ── */
+  #p4 { min-height: auto; }
+  .sound-inner {
+    grid-template-columns: 1fr;
+    padding: 3.5rem 1.5rem 3rem;
+    gap: 2rem; height: auto;
+  }
+  .wave-bars { height: 52px; margin-bottom: 1.2rem; }
+  .inst-grid { grid-template-columns: 1fr 1fr; }
+  .genre-list li { font-size: 0.95rem; }
+
+  /* ── P5: CONNECT ── */
+  #p5 { min-height: auto; }
+  .connect-inner { display: block; width: 100%; height: auto; }
+  .connect-left {
+    padding: 3.5rem 1.5rem 2.5rem;
+    border-right: none; border-bottom: 1px solid var(--line);
+  }
+  .connect-right  { padding: 2.5rem 1.5rem 3rem; }
+  .connect-title  { font-size: clamp(2.5rem, 10vw, 4rem); }
+  .connect-handle {
+    font-size: clamp(1rem, 4.5vw, 1.6rem);
+    padding: 0.9rem 1.4rem; margin-top: 1.5rem;
+  }
+  .connect-body   { font-size: 0.9rem; margin-top: 1.2rem; }
+  .connect-actions { flex-wrap: wrap; gap: 0.7rem; margin-top: 1.4rem; }
+  .connect-bg-text { display: none; }
+  .coartist-card  { width: calc(33.33% - 0.55rem); }
+  .card-name      { font-size: 0.62rem; }
+
+  /* ── P6: DONATE ── */
+  #p6 { min-height: auto; align-items: stretch; }
+  .donate-inner { grid-template-columns: 1fr; height: auto; }
+  .donate-left {
+    padding: 3.5rem 1.5rem 2.5rem;
+    border-right: none; border-bottom: 1px solid var(--line);
+  }
+  .donate-right { padding: 2.5rem 1.5rem 3rem; }
+  .quotes-stack { gap: 1.2rem; margin-top: 1.8rem; }
+  .qr-frame svg { width: 120px; height: 120px; }
+  .bank-key     { width: 90px; font-size: 0.46rem; }
+
+  /* ── P7: HIRE ── */
+  #p7 { min-height: auto; align-items: stretch; }
+  .hire-inner { grid-template-columns: 1fr; height: auto; }
+  .hire-left {
+    padding: 3.5rem 1.5rem 2.5rem;
+    border-right: none; border-bottom: 1px solid var(--line);
+  }
+  .hire-right  { padding: 2.5rem 1.5rem 3rem; }
+  .hire-sub    { font-size: 0.92rem; }
+  .form-title  { font-size: 1.7rem; }
+  .form-row    { grid-template-columns: 1fr; }
+  .form-submit { font-size: 0.56rem; }
+
+  /* ── MODAL ── */
+  .modal-panel {
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 38vh 1fr;
+  }
+  .modal-left  { border-right: none; border-bottom: 1px solid var(--line); }
+  .modal-photo-placeholder { width: 34%; }
+  .modal-right { padding: 1.8rem 1.6rem 2rem; justify-content: flex-start; }
+  .modal-name    { font-size: clamp(2rem, 7vw, 2.8rem); }
+  .modal-bio     { font-size: 0.9rem; max-width: 100%; }
+  .modal-rule    { margin: 1rem 0; }
+  .modal-tags    { margin-top: 1rem; }
+  .modal-socials { margin-top: 1.2rem; }
+  .modal-close   { top: 1rem; right: 1rem; }
+}
+
+/* ═══════════════════════════════════
+   SMALL MOBILE  (≤480px)
+═══════════════════════════════════ */
+@media (max-width: 480px) {
+  .hero-title  { font-size: clamp(4rem, 22vw, 6rem); }
+  .stat-num    { font-size: 2.4rem; }
+  .connect-handle { font-size: clamp(0.95rem, 5vw, 1.3rem); }
+  .coartist-card  { width: calc(33.33% - 0.55rem); }
+  .modal-panel    { grid-template-rows: 34vh 1fr; }
+  .modal-photo-placeholder { width: 28%; }
+  .modal-name  { font-size: clamp(1.8rem, 7vw, 2.4rem); }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-logo" onclick="goTo(0)"><svg class="nav-wordmark" viewBox="169 487 762 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M263.665 610.886H283.997L269.066 578.801H249.688L263.665 610.886Z" fill="currentColor"/>
+<path d="M216.652 548.146H196.797L226.023 487.945L266.051 571.495H230.789L245.561 610.728L207.598 556.564H239.842L226.023 526.067L216.652 548.146Z" fill="currentColor"/>
+<path d="M189.173 611.205H169L195.685 551.799L206.963 570.542L189.173 611.205Z" fill="currentColor"/>
+<path d="M313.546 607.965L361.998 596V611.204H296V522.127H313.546V607.965Z" fill="currentColor"/>
+<path d="M422.04 520.701C436.886 520.701 449.033 532.713 449.033 547.694C449.033 562.541 436.886 574.552 422.04 574.552H391.538V609.644L373.992 631.205V572.528H395.722L391.538 562.541L376.692 527.449L373.992 520.701H422.04ZM425.819 565.915C429.868 561.866 432.432 556.197 432.432 549.989C432.432 537.572 422.31 527.449 409.893 527.449H379.256C383.305 534.063 387.489 540.811 391.538 547.424C396.666 555.792 401.66 564.16 406.789 572.528H409.893C416.101 572.528 421.77 569.964 425.819 565.915Z" fill="currentColor"/>
+<path d="M534.865 504.5V611.205H517.32V563.832V570.5L486.818 563.832C486.818 563.832 486.818 563.832 486.683 563.832C484.523 563.832 482.634 564.642 481.149 565.992C480.339 566.801 479.664 567.746 479.259 568.691C478.855 569.771 478.585 570.85 478.585 571.93C478.585 572.065 478.585 572.065 478.585 572.065V611.205H461.039V522.263H478.45V561.673C473.321 563.832 470.757 567.881 470.757 567.881C471.701 567.206 472.511 566.666 473.456 566.262C473.861 565.992 474.266 565.857 474.671 565.587C474.941 565.452 475.075 565.317 475.345 565.317C475.615 565.047 476.02 564.912 476.425 564.777C477.1 564.507 477.775 564.237 478.45 564.102C480.474 563.427 482.769 563.022 484.928 563.022C485.198 563.022 485.468 563.022 485.738 563.022H517.32V522.263L534.865 504.5Z" fill="currentColor"/>
+<path d="M590.858 522.263C615.287 522.263 634.992 542.238 634.992 566.801C634.992 591.365 615.152 611.205 590.858 611.205C566.564 611.205 546.859 591.365 546.859 566.801C546.859 542.238 566.564 522.263 590.858 522.263ZM590.858 609.99C605.704 609.99 617.716 590.69 617.716 566.801C617.716 542.912 605.704 523.477 590.858 523.477C576.012 523.477 564 542.912 564 566.801C564 590.69 576.012 609.99 590.858 609.99Z" fill="currentColor"/>
+<path d="M717.309 522.127V611.204H693.555V611.069L692.071 608.1L649.826 527.661V569.905L668.047 611.204H646.992V522.127H669.666L703.408 586.506L705.027 589.475L714.475 607.56V563.426L696.255 522.127H717.309Z" fill="currentColor"/>
+<path d="M746.858 503C746.858 532.692 746.858 581.648 746.858 611.205L729.312 633V522.263L746.858 503Z" fill="currentColor"/>
+<path d="M803.263 609.99C812.306 609.99 820.269 602.972 825.263 592.175L833.36 599.598C825.532 606.886 814.87 611.205 803.398 611.205H803.263C778.699 611.205 758.859 591.365 758.859 566.801C758.859 542.238 778.699 522.263 803.263 522.263H803.398C815.005 522.263 825.532 526.717 833.36 534.005L825.263 541.428C820.269 530.631 812.306 523.477 803.263 523.477C788.282 523.477 776.135 542.912 776.135 566.801C776.135 590.69 788.282 609.99 803.263 609.99Z" fill="currentColor"/>
+<path d="M922.155 586.878C921.885 590.252 921.075 593.626 919.456 596.595C917.836 599.429 915.811 601.994 913.247 603.883C910.818 605.908 907.983 607.123 905.284 608.202C899.886 610.227 894.217 610.902 888.683 611.171C883.15 611.306 877.616 611.037 872.218 610.227C869.518 609.687 866.684 609.147 863.985 608.202C861.42 607.257 858.721 606.043 856.157 604.423C853.727 602.939 851.298 600.914 849.138 598.62C848.329 597.675 847.519 596.595 846.709 595.515L853.862 589.442C853.862 591.466 854.132 593.356 854.807 595.111C855.617 597.405 856.966 599.564 858.721 601.319C860.476 603.343 862.635 604.828 864.929 606.043C867.224 607.392 869.788 608.337 872.487 609.012C875.997 609.822 879.641 610.227 883.42 610.227C885.174 610.227 886.929 610.092 888.683 609.957C894.082 609.282 899.346 607.932 903.8 605.098C905.959 603.613 907.983 601.994 909.333 600.104C910.818 598.215 911.763 596.055 912.167 593.761C912.572 591.601 912.437 589.442 912.032 587.283L911.628 585.798L910.953 584.448C910.818 584.043 910.548 583.638 910.278 583.369L910.008 582.829C909.873 582.559 909.603 582.424 909.468 582.289C908.388 581.074 907.039 580.264 905.419 579.455C903.665 578.78 901.64 577.97 899.346 577.565C894.892 576.485 889.898 575.675 884.499 574.866C879.236 573.921 873.567 572.976 867.764 571.087C864.794 570.142 861.825 568.927 858.991 567.443C856.157 565.958 853.052 563.799 850.623 560.964C848.194 558.265 846.304 554.621 845.629 550.977C845.494 550.032 845.494 549.222 845.359 548.277C845.359 547.873 845.359 547.468 845.359 546.928C845.359 546.523 845.359 546.118 845.359 545.713C845.359 544.903 845.359 544.094 845.494 543.284C845.629 542.339 845.899 541.529 846.034 540.719C846.844 537.48 848.464 534.511 850.758 532.082C852.782 529.787 855.212 527.898 858.046 526.548C860.476 525.333 863.31 524.254 866.144 523.714C867.494 523.309 868.843 523.174 870.193 522.904C871.678 522.769 873.027 522.499 874.377 522.499C877.211 522.229 879.911 522.229 882.61 522.364C885.444 522.364 888.278 522.634 890.978 523.039C893.677 523.444 896.511 524.119 899.076 524.928C901.91 525.738 904.609 526.953 907.039 528.438C909.738 530.057 912.032 532.082 914.192 534.241C915.137 535.321 915.946 536.4 916.756 537.48C916.891 537.615 908.793 544.498 908.793 544.498C908.928 543.824 908.928 543.149 908.928 542.609C908.928 540.989 908.658 539.505 908.253 538.02C907.444 535.726 906.229 533.566 904.474 531.677C903.665 530.597 902.72 529.787 901.64 528.977C900.56 528.168 899.481 527.493 898.266 526.818C897.186 526.143 895.837 525.738 894.622 525.198C893.407 524.793 892.058 524.389 890.708 524.119C885.444 522.769 879.911 522.769 874.512 523.579C871.813 523.984 869.248 524.523 866.684 525.603C864.255 526.548 861.96 527.898 859.936 529.652C858.046 531.272 856.427 533.161 855.347 535.321C854.537 537.075 853.997 538.965 853.997 540.989C853.997 541.259 853.997 541.529 854.132 541.799C854.132 542.339 854.267 542.879 854.267 543.419C854.402 543.824 854.537 544.498 854.672 545.038C854.807 545.443 854.942 545.983 855.212 546.523C855.347 546.928 855.617 547.468 855.752 547.873C856.696 549.492 858.046 550.572 859.531 551.517C861.15 552.461 863.04 553.271 864.929 553.676C867.089 554.351 869.383 554.756 871.813 555.161C876.671 555.971 881.935 556.645 887.469 557.59C890.168 558.13 893.002 558.67 895.837 559.345C898.671 560.019 901.64 561.099 904.609 562.179C907.579 563.394 910.548 565.013 913.517 567.308C916.351 569.467 919.051 572.571 920.535 576.215C922.02 579.724 922.56 583.638 922.155 586.878Z" fill="currentColor"/>
+</svg></span>
+
+  <div class="nav-dots">
+    <div class="nav-dot active" data-label="Home" onclick="goTo(0)"></div>
+    <div class="nav-dot" data-label="About" onclick="goTo(1)"></div>
+    <div class="nav-dot" data-label="Band" onclick="goTo(2)"></div>
+    <div class="nav-dot" data-label="Sound" onclick="goTo(3)"></div>
+    <div class="nav-dot" data-label="Connect" onclick="goTo(4)"></div>
+    <div class="nav-dot" data-label="Donate" onclick="goTo(5)"></div>
+    <div class="nav-dot" data-label="Hire Us" onclick="goTo(6)"></div>
+  </div>
+
+  <div class="nav-right">
+    <a href="https://www.instagram.com/alphonics.wav" target="_blank" class="nav-btn btn-ig">@alphonics.wav</a>
+  </div>
+</nav>
+
+<!-- PROGRESS -->
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- ═══════ TRACK ═══════ -->
+<div id="track">
+
+  <!-- ── P1: HERO ── -->
+  <section class="panel" id="p1">
+    <div class="hero-bg-lines">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="hero-glow"></div>
+    <svg class="wave-svg-deco" viewBox="0 0 800 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <polyline points="0,40 24,14 48,62 72,8 96,52 120,28 144,66 168,12 192,48 216,30 240,60 264,18 288,52 312,36 336,64 360,20 384,54 408,38 432,68 456,22 480,56 504,10 528,48 552,30 576,62 600,18 624,46 648,26 672,58 696,16 720,44 744,28 768,56 792,36 800,40" stroke="#ffcc00" stroke-width="1" fill="none"></polyline>
+    </svg>
+    <svg class="hero-logo-watermark" viewBox="150 120 730 800" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M517.109 240.073C699.179 240.073 846.747 386.83 846.747 567.828C846.747 748.827 699.179 895.584 517.109 895.584C335.04 895.584 187.472 748.827 187.472 567.828C187.472 386.83 335.04 240.073 517.109 240.073Z" stroke="white" stroke-width="5.83429"/>
+<path d="M748.538 889.624H873.003L781.599 693.203H662.969L748.538 889.624Z" fill="white"/>
+<path d="M460.712 505.533H339.164L518.082 137L763.123 648.473H547.254L637.685 888.651L405.286 557.069H602.68L518.082 370.372L460.712 505.533Z" fill="white"/>
+<path d="M292.493 891.569H169L332.36 527.898L401.399 642.64L292.493 891.569Z" fill="white"/></svg>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Delhi's Own Sound · Est. 2024</p>
+      <h1 class="hero-title">AL<span class="stroke">PHON</span>ICS</h1>
+      <p class="hero-sub">Where acoustic soul collides with electric fury. Five voices. One frequency.</p>
+      <div class="hero-cta">
+        <a href="https://www.instagram.com/alphonics.wav" target="_blank" class="btn-primary">Follow Us</a>
+        <span class="btn-outline" onclick="goTo(2)">Meet the Band</span>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" onclick="goTo(1)">
+      <div class="scroll-line"></div>
+      <span>Explore</span>
+    </div>
+    <span class="v-label">alphonics.wav</span>
+    <span class="panel-num">01 / 07</span>
+  </section>
+
+  <!-- ── P2: ABOUT ── -->
+  <section class="panel" id="p2">
+    <div class="about-deco"></div>
+    <div class="about-inner">
+      <div>
+        <p class="section-eyebrow">About</p>
+        <h2 class="section-heading">The Sound<br>of Alphonics</h2>
+        <span class="gold-rule"></span>
+        <p class="body-text">Alphonics is more than a band — it's a frequency. Born in Delhi's underground scene, five individuals bound by a shared obsession: music that hits the body before it reaches the mind.</p>
+        <p class="body-text" style="margin-top:1.2rem;">From delicate acoustic fingerpicking to thunderous electric riffs, from hushed harmonies to raw percussive force — our sound refuses category. We play where genres dissolve.</p>
+      </div>
+      <div class="stat-grid">
+        <div class="stat-cell"><span class="stat-num">5</span><span class="stat-label">Musicians</span></div>
+        <div class="stat-cell"><span class="stat-num">1</span><span class="stat-label">Identity</span></div>
+        <div class="stat-cell"><span class="stat-num">∞</span><span class="stat-label">Decibels</span></div>
+        <div class="stat-cell"><span class="stat-num">0</span><span class="stat-label">Compromises</span></div>
+      </div>
+    </div>
+    <span class="v-label">About the Band</span>
+    <span class="panel-num">02 / 07</span>
+  </section>
+
+  <!-- ── P3: MEMBERS ── -->
+  <section class="panel" id="p3">
+    <div class="members-inner">
+      <div class="members-header">
+        <p class="section-eyebrow">The Band</p>
+        <h2 class="section-heading" style="font-size:clamp(2.5rem,5vw,4.5rem);">Five Voices, One Sound</h2>
+      </div>
+      <div class="members-grid">
+        <div class="member-card" onclick="openArtist('aman')">
+          <span class="bg-letter">A</span><span class="member-idx">01</span>
+          <div class="member-avatar member-avatar--photo">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjMwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+CiAgPGRlZnM+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9ImJnX2FtYW4iIGN4PSI1MCUiIGN5PSI0MCUiIHI9IjYwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMxYTE2MTAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwNjA1MDQiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9InNraW5fYW1hbiIgY3g9IjUwJSIgY3k9IjQwJSIgcj0iNTUlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI0Q0OTU2QSIgc3RvcC1vcGFjaXR5PSIxIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRDQ5NTZBIiBzdG9wLW9wYWNpdHk9IjAuODUiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjMwIiBmaWxsPSJ1cmwoI2JnX2FtYW4pIi8+CiAgPGxpbmUgeDE9IjAiIHkxPSIyMjAiIHgyPSIyMDAiIHkyPSIyMjAiIHN0cm9rZT0iI2ZmY2MwMCIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjQiLz4KICA8cGF0aCBkPSJNMCAyMzAgUTAgMTc1IDMwIDE2NSBRNjUgMTU1IDEwMCAxNTIgUTEzNSAxNTUgMTcwIDE2NSBRMjAwIDE3NSAyMDAgMjMwWiIgZmlsbD0iIzExMTAwOSIvPgogIDxwYXRoIGQ9Ik0wIDIzMCBRMCAxODAgMjUgMTcwIFE2MCAxNTggMTAwIDE1NSBRMTQwIDE1OCAxNzUgMTcwIFEyMDAgMTgwIDIwMCAyMzBaIiBmaWxsPSIjMGMwYjA5Ii8+CiAgPHJlY3QgeD0iODQiIHk9IjE0MCIgd2lkdGg9IjMyIiBoZWlnaHQ9IjIyIiByeD0iNiIgZmlsbD0idXJsKCNza2luX2FtYW4pIi8+CiAgPGVsbGlwc2UgY3g9IjQ5IiBjeT0iMTEyIiByeD0iOCIgcnk9IjExIiBmaWxsPSJ1cmwoI3NraW5fYW1hbikiLz4KICA8ZWxsaXBzZSBjeD0iNTEiIGN5PSIxMTIiIHJ4PSI1IiByeT0iOCIgZmlsbD0iI0Q0OTU2QSIgb3BhY2l0eT0iMC41Ii8+CiAgPGVsbGlwc2UgY3g9IjE1MSIgY3k9IjExMiIgcng9IjgiIHJ5PSIxMSIgZmlsbD0idXJsKCNza2luX2FtYW4pIi8+CiAgPGVsbGlwc2UgY3g9IjE0OSIgY3k9IjExMiIgcng9IjUiIHJ5PSI4IiBmaWxsPSIjRDQ5NTZBIiBvcGFjaXR5PSIwLjUiLz4KICA8ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMTEwIiByeD0iNTEiIHJ5PSI1OCIgZmlsbD0idXJsKCNza2luX2FtYW4pIi8+CiAgPGVsbGlwc2UgY3g9IjEwMCIgY3k9IjU4IiByeD0iNTIiIHJ5PSI0OCIgZmlsbD0iIzFhMGEwMCIvPjxwYXRoIGQ9Ik00OCA3NSBRNTIgNDAgMTAwIDM1IFExNDggNDAgMTUyIDc1IiBmaWxsPSIjMWEwYTAwIi8+PHBhdGggZD0iTTQ4IDc1IFE0MCA5MCA0NSAxMTAiIGZpbGw9IiMxYTBhMDAiLz48cGF0aCBkPSJNMTUyIDc1IFExNjAgOTAgMTU1IDExMCIgZmlsbD0iIzFhMGEwMCIvPgogIDxwYXRoIGQ9Ik03MiA5MCBRODMgODUgOTQgODgiIHN0cm9rZT0iIzFhMGEwMCIgc3Ryb2tlLXdpZHRoPSIzIiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8cGF0aCBkPSJNMTA2IDg4IFExMTcgODUgMTI4IDkwIiBzdHJva2U9IiMxYTBhMDAiIHN0cm9rZS13aWR0aD0iMyIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGVsbGlwc2UgY3g9IjgzIiBjeT0iMTAwIiByeD0iMTAiIHJ5PSI3IiBmaWxsPSJ3aGl0ZSIvPgogIDxlbGxpcHNlIGN4PSIxMTciIGN5PSIxMDAiIHJ4PSIxMCIgcnk9IjciIGZpbGw9IndoaXRlIi8+CiAgPGNpcmNsZSBjeD0iODUiIGN5PSIxMDEiIHI9IjYiIGZpbGw9IiMxYTBmMDAiLz4KICA8Y2lyY2xlIGN4PSIxMTkiIGN5PSIxMDEiIHI9IjYiIGZpbGw9IiMxYTBmMDAiLz4KICA8Y2lyY2xlIGN4PSI4NiIgY3k9Ijk5IiByPSIyIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjciLz4KICA8Y2lyY2xlIGN4PSIxMjAiIGN5PSI5OSIgcj0iMiIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC43Ii8+CiAgPHBhdGggZD0iTTczIDk4IFE4MyA5MiA5MyA5OCIgc3Ryb2tlPSIjMWEwYTAwIiBzdHJva2Utd2lkdGg9IjEuNSIgZmlsbD0ibm9uZSIgb3BhY2l0eT0iMC42Ii8+CiAgPHBhdGggZD0iTTEwNyA5OCBRMTE3IDkyIDEyNyA5OCIgc3Ryb2tlPSIjMWEwYTAwIiBzdHJva2Utd2lkdGg9IjEuNSIgZmlsbD0ibm9uZSIgb3BhY2l0eT0iMC42Ii8+CiAgPHBhdGggZD0iTTk3IDEwNyBROTQgMTIyIDkwIDEyNiBRMTAwIDEzMCAxMTAgMTI2IFExMDYgMTIyIDEwMyAxMDdaIiBmaWxsPSIjRDQ5NTZBIiBvcGFjaXR5PSIwLjQiLz4KICA8Y2lyY2xlIGN4PSI5MyIgY3k9IjEyNyIgcj0iNCIgZmlsbD0iI0Q0OTU2QSIgb3BhY2l0eT0iMC4zNSIvPgogIDxjaXJjbGUgY3g9IjEwNyIgY3k9IjEyNyIgcj0iNCIgZmlsbD0iI0Q0OTU2QSIgb3BhY2l0eT0iMC4zNSIvPgogIDxwYXRoIGQ9Ik04NiAxNDAgUTEwMCAxNTAgMTE0IDE0MCIgc3Ryb2tlPSIjYjM2MjAwIiBzdHJva2Utd2lkdGg9IjIuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBhdGggZD0iTTg4IDE0MCBRMTAwIDE0NSAxMTIgMTQwIiBmaWxsPSIjY2M2NjIyIiBvcGFjaXR5PSIwLjUiLz4KICA8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIzMCIgZmlsbD0iI2ZmY2MwMCIgb3BhY2l0eT0iMC4wMiIvPgo8L3N2Zz4=" alt="Aman Vishal Dwivedi">
+          </div>
+          <div class="member-name">Aman Vishal<br>Dwivedi</div>
+          <div class="member-role">Lead Singer</div>
+        </div>
+        <div class="member-card" onclick="openArtist('sagar')">
+          <span class="bg-letter">S</span><span class="member-idx">02</span>
+          <div class="member-avatar member-avatar--photo">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjMwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+CiAgPGRlZnM+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9ImJnX2FtYW4iIGN4PSI1MCUiIGN5PSI0MCUiIHI9IjYwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMxYTE2MTAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwNjA1MDQiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9InNraW5fYW1hbiIgY3g9IjUwJSIgY3k9IjQwJSIgcj0iNTUlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI0Q0OTU2QSIgc3RvcC1vcGFjaXR5PSIxIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRDQ5NTZBIiBzdG9wLW9wYWNpdHk9IjAuODUiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjMwIiBmaWxsPSJ1cmwoI2JnX2FtYW4pIi8+CiAgPGxpbmUgeDE9IjAiIHkxPSIyMjAiIHgyPSIyMDAiIHkyPSIyMjAiIHN0cm9rZT0iI2ZmY2MwMCIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjQiLz4KICA8cGF0aCBkPSJNMCAyMzAgUTAgMTc1IDMwIDE2NSBRNjUgMTU1IDEwMCAxNTIgUTEzNSAxNTUgMTcwIDE2NSBRMjAwIDE3NSAyMDAgMjMwWiIgZmlsbD0iIzExMTAwOSIvPgogIDxwYXRoIGQ9Ik0wIDIzMCBRMCAxODAgMjUgMTcwIFE2MCAxNTggMTAwIDE1NSBRMTQwIDE1OCAxNzUgMTcwIFEyMDAgMTgwIDIwMCAyMzBaIiBmaWxsPSIjMGMwYjA5Ii8+CiAgPHJlY3QgeD0iODQiIHk9IjE0MCIgd2lkdGg9IjMyIiBoZWlnaHQ9IjIyIiByeD0iNiIgZmlsbD0idXJsKCNza2luX2FtYW4pIi8+CiAgPGVsbGlwc2UgY3g9IjQ5IiBjeT0iMTEyIiByeD0iOCIgcnk9IjExIiBmaWxsPSJ1cmwoI3NraW5fYW1hbikiLz4KICA8ZWxsaXBzZSBjeD0iNTEiIGN5PSIxMTIiIHJ4PSI1IiByeT0iOCIgZmlsbD0iI0Q0OTU2QSIgb3BhY2l0eT0iMC41Ii8+CiAgPGVsbGlwc2UgY3g9IjE1MSIgY3k9IjExMiIgcng9IjgiIHJ5PSIxMSIgZmlsbD0idXJsKCNza2luX2FtYW4pIi8+CiAgPGVsbGlwc2UgY3g9IjE0OSIgY3k9IjExMiIgcng9IjUiIHJ5PSI4IiBmaWxsPSIjRDQ5NTZBIiBvcGFjaXR5PSIwLjUiLz4KICA8ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMTEwIiByeD0iNTEiIHJ5PSI1OCIgZmlsbD0idXJsKCNza2luX2FtYW4pIi8+CiAgPGVsbGlwc2UgY3g9IjEwMCIgY3k9IjU4IiByeD0iNTIiIHJ5PSI0OCIgZmlsbD0iIzFhMGEwMCIvPjxwYXRoIGQ9Ik00OCA3NSBRNTIgNDAgMTAwIDM1IFExNDggNDAgMTUyIDc1IiBmaWxsPSIjMWEwYTAwIi8+PHBhdGggZD0iTTQ4IDc1IFE0MCA5MCA0NSAxMTAiIGZpbGw9IiMxYTBhMDAiLz48cGF0aCBkPSJNMTUyIDc1IFExNjAgOTAgMTU1IDExMCIgZmlsbD0iIzFhMGEwMCIvPgogIDxwYXRoIGQ9Ik03MiA5MCBRODMgODUgOTQgODgiIHN0cm9rZT0iIzFhMGEwMCIgc3Ryb2tlLXdpZHRoPSIzIiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8cGF0aCBkPSJNMTA2IDg4IFExMTcgODUgMTI4IDkwIiBzdHJva2U9IiMxYTBhMDAiIHN0cm9rZS13aWR0aD0iMyIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGVsbGlwc2UgY3g9IjgzIiBjeT0iMTAwIiByeD0iMTAiIHJ5PSI3IiBmaWxsPSJ3aGl0ZSIvPgogIDxlbGxpcHNlIGN4PSIxMTciIGN5PSIxMDAiIHJ4PSIxMCIgcnk9IjciIGZpbGw9IndoaXRlIi8+CiAgPGNpcmNsZSBjeD0iODUiIGN5PSIxMDEiIHI9IjYiIGZpbGw9IiMxYTBmMDAiLz4KICA8Y2lyY2xlIGN4PSIxMTkiIGN5PSIxMDEiIHI9IjYiIGZpbGw9IiMxYTBmMDAiLz4KICA8Y2lyY2xlIGN4PSI4NiIgY3k9Ijk5IiByPSIyIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjciLz4KICA8Y2lyY2xlIGN4PSIxMjAiIGN5PSI5OSIgcj0iMiIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC43Ii8+CiAgPHBhdGggZD0iTTczIDk4IFE4MyA5MiA5MyA5OCIgc3Ryb2tlPSIjMWEwYTAwIiBzdHJva2Utd2lkdGg9IjEuNSIgZmlsbD0ibm9uZSIgb3BhY2l0eT0iMC42Ii8+CiAgPHBhdGggZD0iTTEwNyA5OCBRMTE3IDkyIDEyNyA5OCIgc3Ryb2tlPSIjMWEwYTAwIiBzdHJva2Utd2lkdGg9IjEuNSIgZmlsbD0ibm9uZSIgb3BhY2l0eT0iMC42Ii8+CiAgPHBhdGggZD0iTTk3IDEwNyBROTQgMTIyIDkwIDEyNiBRMTAwIDEzMCAxMTAgMTI2IFExMDYgMTIyIDEwMyAxMDdaIiBmaWxsPSIjRDQ5NTZBIiBvcGFjaXR5PSIwLjQiLz4KICA8Y2lyY2xlIGN4PSI5MyIgY3k9IjEyNyIgcj0iNCIgZmlsbD0iI0Q0OTU2QSIgb3BhY2l0eT0iMC4zNSIvPgogIDxjaXJjbGUgY3g9IjEwNyIgY3k9IjEyNyIgcj0iNCIgZmlsbD0iI0Q0OTU2QSIgb3BhY2l0eT0iMC4zNSIvPgogIDxwYXRoIGQ9Ik04NiAxNDAgUTEwMCAxNTAgMTE0IDE0MCIgc3Ryb2tlPSIjYjM2MjAwIiBzdHJva2Utd2lkdGg9IjIuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBhdGggZD0iTTg4IDE0MCBRMTAwIDE0NSAxMTIgMTQwIiBmaWxsPSIjY2M2NjIyIiBvcGFjaXR5PSIwLjUiLz4KICA8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIzMCIgZmlsbD0iI2ZmY2MwMCIgb3BhY2l0eT0iMC4wMiIvPgo8L3N2Zz4=" alt="Sagar Raturi">
+          </div>
+          <div class="member-name">Sagar<br>Raturi</div>
+          <div class="member-role">Acoustic Guitar<br>&amp; Vocals</div>
+        </div>
+        <div class="member-card" onclick="openArtist('aditya')">
+          <span class="bg-letter">A</span><span class="member-idx">03</span>
+          <div class="member-avatar member-avatar--photo">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjMwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+CiAgPGRlZnM+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9ImJnX3NhZ2FyIiBjeD0iNTAlIiBjeT0iNDAlIiByPSI2MCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMWExNjEwIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDYwNTA0Ii8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJza2luX3NhZ2FyIiBjeD0iNTAlIiBjeT0iNDAlIiByPSI1NSUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjQzE3RjVBIiBzdG9wLW9wYWNpdHk9IjEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNDMTdGNUEiIHN0b3Atb3BhY2l0eT0iMC44NSIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMzAiIGZpbGw9InVybCgjYmdfc2FnYXIpIi8+CiAgPGxpbmUgeDE9IjAiIHkxPSIyMjAiIHgyPSIyMDAiIHkyPSIyMjAiIHN0cm9rZT0iI2ZmY2MwMCIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjQiLz4KICA8cGF0aCBkPSJNMCAyMzAgUTAgMTc1IDMwIDE2NSBRNjUgMTU1IDEwMCAxNTIgUTEzNSAxNTUgMTcwIDE2NSBRMjAwIDE3NSAyMDAgMjMwWiIgZmlsbD0iIzExMTAwOSIvPgogIDxwYXRoIGQ9Ik0wIDIzMCBRMCAxODAgMjUgMTcwIFE2MCAxNTggMTAwIDE1NSBRMTQwIDE1OCAxNzUgMTcwIFEyMDAgMTgwIDIwMCAyMzBaIiBmaWxsPSIjMGMwYjA5Ii8+CiAgPHJlY3QgeD0iODQiIHk9IjE0MCIgd2lkdGg9IjMyIiBoZWlnaHQ9IjIyIiByeD0iNiIgZmlsbD0idXJsKCNza2luX3NhZ2FyKSIvPgogIDxlbGxpcHNlIGN4PSI0OSIgY3k9IjExMiIgcng9IjgiIHJ5PSIxMSIgZmlsbD0idXJsKCNza2luX3NhZ2FyKSIvPgogIDxlbGxpcHNlIGN4PSI1MSIgY3k9IjExMiIgcng9IjUiIHJ5PSI4IiBmaWxsPSIjQzE3RjVBIiBvcGFjaXR5PSIwLjUiLz4KICA8ZWxsaXBzZSBjeD0iMTUxIiBjeT0iMTEyIiByeD0iOCIgcnk9IjExIiBmaWxsPSJ1cmwoI3NraW5fc2FnYXIpIi8+CiAgPGVsbGlwc2UgY3g9IjE0OSIgY3k9IjExMiIgcng9IjUiIHJ5PSI4IiBmaWxsPSIjQzE3RjVBIiBvcGFjaXR5PSIwLjUiLz4KICA8ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMTEwIiByeD0iNTEiIHJ5PSI1OCIgZmlsbD0idXJsKCNza2luX3NhZ2FyKSIvPgogIDxlbGxpcHNlIGN4PSIxMDAiIGN5PSI1OCIgcng9IjUyIiByeT0iNTAiIGZpbGw9IiMwZDA1MDAiLz48cGF0aCBkPSJNNDggNzAgUTQ1IDUwIDYwIDM4IFExMDAgMjggMTUwIDU1IFExNTUgNjUgMTUyIDgwIiBmaWxsPSIjMGQwNTAwIi8+PHBhdGggZD0iTTQ4IDcwIFEzOCA5NSA0MiAxMTUiIGZpbGw9IiMwZDA1MDAiLz48cGF0aCBkPSJNMTUyIDgwIFExNjIgOTUgMTU4IDExNSIgZmlsbD0iIzBkMDUwMCIvPgogIDxwYXRoIGQ9Ik03MiA5MCBRODMgODUgOTQgODgiIHN0cm9rZT0iIzBkMDUwMCIgc3Ryb2tlLXdpZHRoPSIzIiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8cGF0aCBkPSJNMTA2IDg4IFExMTcgODUgMTI4IDkwIiBzdHJva2U9IiMwZDA1MDAiIHN0cm9rZS13aWR0aD0iMyIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGVsbGlwc2UgY3g9IjgzIiBjeT0iMTAwIiByeD0iMTAiIHJ5PSI3IiBmaWxsPSJ3aGl0ZSIvPgogIDxlbGxpcHNlIGN4PSIxMTciIGN5PSIxMDAiIHJ4PSIxMCIgcnk9IjciIGZpbGw9IndoaXRlIi8+CiAgPGNpcmNsZSBjeD0iODUiIGN5PSIxMDEiIHI9IjYiIGZpbGw9IiMxYTBmMDAiLz4KICA8Y2lyY2xlIGN4PSIxMTkiIGN5PSIxMDEiIHI9IjYiIGZpbGw9IiMxYTBmMDAiLz4KICA8Y2lyY2xlIGN4PSI4NiIgY3k9Ijk5IiByPSIyIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjciLz4KICA8Y2lyY2xlIGN4PSIxMjAiIGN5PSI5OSIgcj0iMiIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC43Ii8+CiAgPHBhdGggZD0iTTczIDk4IFE4MyA5MiA5MyA5OCIgc3Ryb2tlPSIjMGQwNTAwIiBzdHJva2Utd2lkdGg9IjEuNSIgZmlsbD0ibm9uZSIgb3BhY2l0eT0iMC42Ii8+CiAgPHBhdGggZD0iTTEwNyA5OCBRMTE3IDkyIDEyNyA5OCIgc3Ryb2tlPSIjMGQwNTAwIiBzdHJva2Utd2lkdGg9IjEuNSIgZmlsbD0ibm9uZSIgb3BhY2l0eT0iMC42Ii8+CiAgPHBhdGggZD0iTTk3IDEwNyBROTQgMTIyIDkwIDEyNiBRMTAwIDEzMCAxMTAgMTI2IFExMDYgMTIyIDEwMyAxMDdaIiBmaWxsPSIjQzE3RjVBIiBvcGFjaXR5PSIwLjQiLz4KICA8Y2lyY2xlIGN4PSI5MyIgY3k9IjEyNyIgcj0iNCIgZmlsbD0iI0MxN0Y1QSIgb3BhY2l0eT0iMC4zNSIvPgogIDxjaXJjbGUgY3g9IjEwNyIgY3k9IjEyNyIgcj0iNCIgZmlsbD0iI0MxN0Y1QSIgb3BhY2l0eT0iMC4zNSIvPgogIDxwYXRoIGQ9Ik04NiAxNDAgUTEwMCAxNTAgMTE0IDE0MCIgc3Ryb2tlPSIjYjM2MjAwIiBzdHJva2Utd2lkdGg9IjIuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBhdGggZD0iTTg4IDE0MCBRMTAwIDE0NSAxMTIgMTQwIiBmaWxsPSIjY2M2NjIyIiBvcGFjaXR5PSIwLjUiLz4KICA8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIzMCIgZmlsbD0iI2ZmY2MwMCIgb3BhY2l0eT0iMC4wMiIvPgo8L3N2Zz4=" alt="Aditya">
+          </div>
+          <div class="member-name">Aditya</div>
+          <div class="member-role">Lead Acoustic<br>&amp; Electric Guitar</div>
+        </div>
+        <div class="member-card" onclick="openArtist('abhishek')">
+          <span class="bg-letter">A</span><span class="member-idx">04</span>
+          <div class="member-avatar member-avatar--photo">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjMwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+CiAgPGRlZnM+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9ImJnX3NhZ2FyIiBjeD0iNTAlIiBjeT0iNDAlIiByPSI2MCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMWExNjEwIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDYwNTA0Ii8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJza2luX3NhZ2FyIiBjeD0iNTAlIiBjeT0iNDAlIiByPSI1NSUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjQzE3RjVBIiBzdG9wLW9wYWNpdHk9IjEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNDMTdGNUEiIHN0b3Atb3BhY2l0eT0iMC44NSIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMzAiIGZpbGw9InVybCgjYmdfc2FnYXIpIi8+CiAgPGxpbmUgeDE9IjAiIHkxPSIyMjAiIHgyPSIyMDAiIHkyPSIyMjAiIHN0cm9rZT0iI2ZmY2MwMCIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjQiLz4KICA8cGF0aCBkPSJNMCAyMzAgUTAgMTc1IDMwIDE2NSBRNjUgMTU1IDEwMCAxNTIgUTEzNSAxNTUgMTcwIDE2NSBRMjAwIDE3NSAyMDAgMjMwWiIgZmlsbD0iIzExMTAwOSIvPgogIDxwYXRoIGQ9Ik0wIDIzMCBRMCAxODAgMjUgMTcwIFE2MCAxNTggMTAwIDE1NSBRMTQwIDE1OCAxNzUgMTcwIFEyMDAgMTgwIDIwMCAyMzBaIiBmaWxsPSIjMGMwYjA5Ii8+CiAgPHJlY3QgeD0iODQiIHk9IjE0MCIgd2lkdGg9IjMyIiBoZWlnaHQ9IjIyIiByeD0iNiIgZmlsbD0idXJsKCNza2luX3NhZ2FyKSIvPgogIDxlbGxpcHNlIGN4PSI0OSIgY3k9IjExMiIgcng9IjgiIHJ5PSIxMSIgZmlsbD0idXJsKCNza2luX3NhZ2FyKSIvPgogIDxlbGxpcHNlIGN4PSI1MSIgY3k9IjExMiIgcng9IjUiIHJ5PSI4IiBmaWxsPSIjQzE3RjVBIiBvcGFjaXR5PSIwLjUiLz4KICA8ZWxsaXBzZSBjeD0iMTUxIiBjeT0iMTEyIiByeD0iOCIgcnk9IjExIiBmaWxsPSJ1cmwoI3NraW5fc2FnYXIpIi8+CiAgPGVsbGlwc2UgY3g9IjE0OSIgY3k9IjExMiIgcng9IjUiIHJ5PSI4IiBmaWxsPSIjQzE3RjVBIiBvcGFjaXR5PSIwLjUiLz4KICA8ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMTEwIiByeD0iNTEiIHJ5PSI1OCIgZmlsbD0idXJsKCNza2luX3NhZ2FyKSIvPgogIDxlbGxpcHNlIGN4PSIxMDAiIGN5PSI1OCIgcng9IjUyIiByeT0iNTAiIGZpbGw9IiMwZDA1MDAiLz48cGF0aCBkPSJNNDggNzAgUTQ1IDUwIDYwIDM4IFExMDAgMjggMTUwIDU1IFExNTUgNjUgMTUyIDgwIiBmaWxsPSIjMGQwNTAwIi8+PHBhdGggZD0iTTQ4IDcwIFEzOCA5NSA0MiAxMTUiIGZpbGw9IiMwZDA1MDAiLz48cGF0aCBkPSJNMTUyIDgwIFExNjIgOTUgMTU4IDExNSIgZmlsbD0iIzBkMDUwMCIvPgogIDxwYXRoIGQ9Ik03MiA5MCBRODMgODUgOTQgODgiIHN0cm9rZT0iIzBkMDUwMCIgc3Ryb2tlLXdpZHRoPSIzIiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8cGF0aCBkPSJNMTA2IDg4IFExMTcgODUgMTI4IDkwIiBzdHJva2U9IiMwZDA1MDAiIHN0cm9rZS13aWR0aD0iMyIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGVsbGlwc2UgY3g9IjgzIiBjeT0iMTAwIiByeD0iMTAiIHJ5PSI3IiBmaWxsPSJ3aGl0ZSIvPgogIDxlbGxpcHNlIGN4PSIxMTciIGN5PSIxMDAiIHJ4PSIxMCIgcnk9IjciIGZpbGw9IndoaXRlIi8+CiAgPGNpcmNsZSBjeD0iODUiIGN5PSIxMDEiIHI9IjYiIGZpbGw9IiMxYTBmMDAiLz4KICA8Y2lyY2xlIGN4PSIxMTkiIGN5PSIxMDEiIHI9IjYiIGZpbGw9IiMxYTBmMDAiLz4KICA8Y2lyY2xlIGN4PSI4NiIgY3k9Ijk5IiByPSIyIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjciLz4KICA8Y2lyY2xlIGN4PSIxMjAiIGN5PSI5OSIgcj0iMiIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC43Ii8+CiAgPHBhdGggZD0iTTczIDk4IFE4MyA5MiA5MyA5OCIgc3Ryb2tlPSIjMGQwNTAwIiBzdHJva2Utd2lkdGg9IjEuNSIgZmlsbD0ibm9uZSIgb3BhY2l0eT0iMC42Ii8+CiAgPHBhdGggZD0iTTEwNyA5OCBRMTE3IDkyIDEyNyA5OCIgc3Ryb2tlPSIjMGQwNTAwIiBzdHJva2Utd2lkdGg9IjEuNSIgZmlsbD0ibm9uZSIgb3BhY2l0eT0iMC42Ii8+CiAgPHBhdGggZD0iTTk3IDEwNyBROTQgMTIyIDkwIDEyNiBRMTAwIDEzMCAxMTAgMTI2IFExMDYgMTIyIDEwMyAxMDdaIiBmaWxsPSIjQzE3RjVBIiBvcGFjaXR5PSIwLjQiLz4KICA8Y2lyY2xlIGN4PSI5MyIgY3k9IjEyNyIgcj0iNCIgZmlsbD0iI0MxN0Y1QSIgb3BhY2l0eT0iMC4zNSIvPgogIDxjaXJjbGUgY3g9IjEwNyIgY3k9IjEyNyIgcj0iNCIgZmlsbD0iI0MxN0Y1QSIgb3BhY2l0eT0iMC4zNSIvPgogIDxwYXRoIGQ9Ik04NiAxNDAgUTEwMCAxNTAgMTE0IDE0MCIgc3Ryb2tlPSIjYjM2MjAwIiBzdHJva2Utd2lkdGg9IjIuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBhdGggZD0iTTg4IDE0MCBRMTAwIDE0NSAxMTIgMTQwIiBmaWxsPSIjY2M2NjIyIiBvcGFjaXR5PSIwLjUiLz4KICA8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIzMCIgZmlsbD0iI2ZmY2MwMCIgb3BhY2l0eT0iMC4wMiIvPgo8L3N2Zz4=" alt="Abhishek">
+          </div>
+          <div class="member-name">Abhishek</div>
+          <div class="member-role">Lead Drums<br>&amp; Percussion</div>
+        </div>
+        <div class="member-card" onclick="openArtist('pritish')">
+          <span class="bg-letter">P</span><span class="member-idx">05</span>
+          <div class="member-avatar member-avatar--photo">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjMwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+CiAgPGRlZnM+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9ImJnX2FkaXR5YSIgY3g9IjUwJSIgY3k9IjQwJSIgcj0iNjAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFhMTYxMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzA2MDUwNCIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0ic2tpbl9hZGl0eWEiIGN4PSI1MCUiIGN5PSI0MCUiIHI9IjU1JSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNCNTY5M0UiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI0I1NjkzRSIgc3RvcC1vcGFjaXR5PSIwLjg1Ii8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIzMCIgZmlsbD0idXJsKCNiZ19hZGl0eWEpIi8+CiAgPGxpbmUgeDE9IjAiIHkxPSIyMjAiIHgyPSIyMDAiIHkyPSIyMjAiIHN0cm9rZT0iI2ZmY2MwMCIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjQiLz4KICA8cGF0aCBkPSJNMCAyMzAgUTAgMTc1IDMwIDE2NSBRNjUgMTU1IDEwMCAxNTIgUTEzNSAxNTUgMTcwIDE2NSBRMjAwIDE3NSAyMDAgMjMwWiIgZmlsbD0iIzExMTAwOSIvPgogIDxwYXRoIGQ9Ik0wIDIzMCBRMCAxODAgMjUgMTcwIFE2MCAxNTggMTAwIDE1NSBRMTQwIDE1OCAxNzUgMTcwIFEyMDAgMTgwIDIwMCAyMzBaIiBmaWxsPSIjMGMwYjA5Ii8+CiAgPHJlY3QgeD0iODQiIHk9IjE0MCIgd2lkdGg9IjMyIiBoZWlnaHQ9IjIyIiByeD0iNiIgZmlsbD0idXJsKCNza2luX2FkaXR5YSkiLz4KICA8ZWxsaXBzZSBjeD0iNDkiIGN5PSIxMTIiIHJ4PSI4IiByeT0iMTEiIGZpbGw9InVybCgjc2tpbl9hZGl0eWEpIi8+CiAgPGVsbGlwc2UgY3g9IjUxIiBjeT0iMTEyIiByeD0iNSIgcnk9IjgiIGZpbGw9IiNCNTY5M0UiIG9wYWNpdHk9IjAuNSIvPgogIDxlbGxpcHNlIGN4PSIxNTEiIGN5PSIxMTIiIHJ4PSI4IiByeT0iMTEiIGZpbGw9InVybCgjc2tpbl9hZGl0eWEpIi8+CiAgPGVsbGlwc2UgY3g9IjE0OSIgY3k9IjExMiIgcng9IjUiIHJ5PSI4IiBmaWxsPSIjQjU2OTNFIiBvcGFjaXR5PSIwLjUiLz4KICA8ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMTEwIiByeD0iNTEiIHJ5PSI1OCIgZmlsbD0idXJsKCNza2luX2FkaXR5YSkiLz4KICA8ZWxsaXBzZSBjeD0iMTAwIiBjeT0iNTUiIHJ4PSI1MiIgcnk9IjQ4IiBmaWxsPSIjMTgwODAwIi8+PHBhdGggZD0iTTQ4IDcwIFEzMCAxMDAgMzIgMTUwIFEzNSAxNjUgNDIgMTcwIiBmaWxsPSIjMTgwODAwIi8+PHBhdGggZD0iTTE1MiA3MCBRMTcwIDEwMCAxNjggMTUwIFExNjUgMTY1IDE1OCAxNzAiIGZpbGw9IiMxODA4MDAiLz48cGF0aCBkPSJNNDggNjggUTQ0IDQ1IDY1IDM1IFExMDAgMjUgMTM1IDM1IFExNTYgNDUgMTUyIDY4IiBmaWxsPSIjMTgwODAwIi8+CiAgPHBhdGggZD0iTTcyIDkwIFE4MyA4NSA5NCA4OCIgc3Ryb2tlPSIjMTgwODAwIiBzdHJva2Utd2lkdGg9IjMiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik0xMDYgODggUTExNyA4NSAxMjggOTAiIHN0cm9rZT0iIzE4MDgwMCIgc3Ryb2tlLXdpZHRoPSIzIiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8ZWxsaXBzZSBjeD0iODMiIGN5PSIxMDAiIHJ4PSIxMCIgcnk9IjciIGZpbGw9IndoaXRlIi8+CiAgPGVsbGlwc2UgY3g9IjExNyIgY3k9IjEwMCIgcng9IjEwIiByeT0iNyIgZmlsbD0id2hpdGUiLz4KICA8Y2lyY2xlIGN4PSI4NSIgY3k9IjEwMSIgcj0iNiIgZmlsbD0iIzFhMGYwMCIvPgogIDxjaXJjbGUgY3g9IjExOSIgY3k9IjEwMSIgcj0iNiIgZmlsbD0iIzFhMGYwMCIvPgogIDxjaXJjbGUgY3g9Ijg2IiBjeT0iOTkiIHI9IjIiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuNyIvPgogIDxjaXJjbGUgY3g9IjEyMCIgY3k9Ijk5IiByPSIyIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjciLz4KICA8cGF0aCBkPSJNNzMgOTggUTgzIDkyIDkzIDk4IiBzdHJva2U9IiMxODA4MDAiIHN0cm9rZS13aWR0aD0iMS41IiBmaWxsPSJub25lIiBvcGFjaXR5PSIwLjYiLz4KICA8cGF0aCBkPSJNMTA3IDk4IFExMTcgOTIgMTI3IDk4IiBzdHJva2U9IiMxODA4MDAiIHN0cm9rZS13aWR0aD0iMS41IiBmaWxsPSJub25lIiBvcGFjaXR5PSIwLjYiLz4KICA8cGF0aCBkPSJNOTcgMTA3IFE5NCAxMjIgOTAgMTI2IFExMDAgMTMwIDExMCAxMjYgUTEwNiAxMjIgMTAzIDEwN1oiIGZpbGw9IiNCNTY5M0UiIG9wYWNpdHk9IjAuNCIvPgogIDxjaXJjbGUgY3g9IjkzIiBjeT0iMTI3IiByPSI0IiBmaWxsPSIjQjU2OTNFIiBvcGFjaXR5PSIwLjM1Ii8+CiAgPGNpcmNsZSBjeD0iMTA3IiBjeT0iMTI3IiByPSI0IiBmaWxsPSIjQjU2OTNFIiBvcGFjaXR5PSIwLjM1Ii8+CiAgPHBhdGggZD0iTTg2IDE0MCBRMTAwIDE1MCAxMTQgMTQwIiBzdHJva2U9IiNiMzYyMDAiIHN0cm9rZS13aWR0aD0iMi41IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8cGF0aCBkPSJNODggMTQwIFExMDAgMTQ1IDExMiAxNDAiIGZpbGw9IiNjYzY2MjIiIG9wYWNpdHk9IjAuNSIvPgogIDxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjMwIiBmaWxsPSIjZmZjYzAwIiBvcGFjaXR5PSIwLjAyIi8+Cjwvc3ZnPg==" alt="Pritish Tyagi">
+          </div>
+          <div class="member-name">Pritish<br>Tyagi</div>
+          <div class="member-role">Chorus</div>
+          <span class="member-badge">Band Manager</span>
+        </div>
+      </div>
+    </div>
+    <span class="v-label">Meet The Band</span>
+    <span class="panel-num">03 / 07</span>
+  </section>
+
+  <!-- ── P4: SOUND ── -->
+  <section class="panel" id="p4">
+    <div class="sound-deco"></div>
+    <div class="sound-inner">
+      <div>
+        <p class="section-eyebrow">Our Sound</p>
+        <h2 class="section-heading">Genre Is<br>a Cage</h2>
+        <span class="gold-rule"></span>
+        <ul class="genre-list">
+          <li><span class="g-dot"></span>Alternative Rock</li>
+          <li><span class="g-dot"></span>Acoustic Soul</li>
+          <li><span class="g-dot"></span>Indie Folk</li>
+          <li><span class="g-dot"></span>Progressive</li>
+          <li><span class="g-dot"></span>Live Experience</li>
+        </ul>
+      </div>
+      <div>
+        <div class="wave-bars" id="waveBars"></div>
+        <div class="inst-grid">
+          <div class="inst-cell"><div class="inst-name">Vocals</div><div class="inst-sub">Lead &amp; Chorus</div></div>
+          <div class="inst-cell"><div class="inst-name">Acoustic</div><div class="inst-sub">Fingerstyle &amp; Rhythm</div></div>
+          <div class="inst-cell"><div class="inst-name">Electric</div><div class="inst-sub">Lead &amp; Solo</div></div>
+          <div class="inst-cell"><div class="inst-name">Drums</div><div class="inst-sub">Full Kit &amp; Perc</div></div>
+        </div>
+      </div>
+    </div>
+    <span class="v-label">Sound &amp; Style</span>
+    <span class="panel-num">04 / 07</span>
+  </section>
+
+  <!-- ── P5: CONNECT ── -->
+  <section class="panel" id="p5">
+    <div class="connect-bg-text">ALPHONICS</div>
+    <div class="connect-inner">
+
+      <!-- LEFT: connect info -->
+      <div class="connect-left">
+        <p class="section-eyebrow">Connect</p>
+        <h2 class="connect-title">Find Us<br>In The Feed</h2>
+        <a href="https://www.instagram.com/alphonics.wav" target="_blank" class="connect-handle">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+            <circle cx="12" cy="12" r="4"></circle>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle>
+          </svg>
+          @alphonics.wav
+        </a>
+        <p class="connect-body">Follow our journey on Instagram — live clips, behind-the-scenes, and every drop of new music. Delhi's scene is alive. So are we.</p>
+        <p class="connect-tag">Available for live events · Delhi &amp; Beyond</p>
+        <div class="connect-actions">
+          <span class="btn-primary" onclick="goTo(6)">Book Us →</span>
+          <span class="btn-outline" onclick="goTo(5)">Support Us</span>
+        </div>
+      </div>
+
+      <!-- RIGHT: co-artists gallery -->
+      <div class="connect-right">
+        <p class="coartists-eyebrow">Co-Artists &amp; Collaborators</p>
+        <div class="coartists-grid">
+
+          <div class="coartist-card">
+            <div class="portrait-frame">
+              <div class="portrait-ph">
+                <span class="portrait-initials">SS</span>
+                <span class="portrait-upload-hint">Add Photo</span>
+              </div>
+            </div>
+            <span class="card-name">Sumit Sharma</span>
+          </div>
+
+          <div class="coartist-card">
+            <div class="portrait-frame">
+              <div class="portrait-ph">
+                <span class="portrait-initials">SS</span>
+                <span class="portrait-upload-hint">Add Photo</span>
+              </div>
+            </div>
+            <span class="card-name">Sumit Singh</span>
+          </div>
+
+          <div class="coartist-card">
+            <div class="portrait-frame">
+              <div class="portrait-ph">
+                <span class="portrait-initials">AB</span>
+                <span class="portrait-upload-hint">Add Photo</span>
+              </div>
+            </div>
+            <span class="card-name">Anupriya Bhardwaj</span>
+          </div>
+
+          <div class="coartist-card">
+            <div class="portrait-frame">
+              <div class="portrait-ph">
+                <span class="portrait-initials">JG</span>
+                <span class="portrait-upload-hint">Add Photo</span>
+              </div>
+            </div>
+            <span class="card-name">Jagriti</span>
+          </div>
+
+          <div class="coartist-card">
+            <div class="portrait-frame">
+              <div class="portrait-ph">
+                <span class="portrait-initials">AS</span>
+                <span class="portrait-upload-hint">Add Photo</span>
+              </div>
+            </div>
+            <span class="card-name">Aakansha Singh</span>
+          </div>
+
+          <div class="coartist-card">
+            <div class="portrait-frame">
+              <div class="portrait-ph">
+                <span class="portrait-initials">BH</span>
+                <span class="portrait-upload-hint">Add Photo</span>
+              </div>
+            </div>
+            <span class="card-name">Bhagyashree</span>
+          </div>
+
+          <div class="coartist-card">
+            <div class="portrait-frame">
+              <div class="portrait-ph">
+                <span class="portrait-initials">HC</span>
+                <span class="portrait-upload-hint">Add Photo</span>
+              </div>
+            </div>
+            <span class="card-name">Harshit Chaudhary</span>
+          </div>
+
+          <div class="coartist-card">
+            <div class="portrait-frame">
+              <div class="portrait-ph">
+                <span class="portrait-initials">KM</span>
+                <span class="portrait-upload-hint">Add Photo</span>
+              </div>
+            </div>
+            <span class="card-name">Kunal Meshram</span>
+          </div>
+
+          <div class="coartist-card">
+            <div class="portrait-frame">
+              <div class="portrait-ph">
+                <span class="portrait-initials">DS</span>
+                <span class="portrait-upload-hint">Add Photo</span>
+              </div>
+            </div>
+            <span class="card-name">Dhairya Saraswat</span>
+          </div>
+
+          <div class="coartist-card">
+            <div class="portrait-frame">
+              <div class="portrait-ph">
+                <span class="portrait-initials">BB</span>
+                <span class="portrait-upload-hint">Add Photo</span>
+              </div>
+            </div>
+            <span class="card-name">Bharat Bedi</span>
+          </div>
+
+          <div class="coartist-card">
+            <div class="portrait-frame">
+              <div class="portrait-ph">
+                <span class="portrait-initials">GS</span>
+                <span class="portrait-upload-hint">Add Photo</span>
+              </div>
+            </div>
+            <span class="card-name">Garima Sharma</span>
+          </div>
+
+          <div class="coartist-card">
+            <div class="portrait-frame">
+              <div class="portrait-ph">
+                <span class="portrait-initials">AY</span>
+                <span class="portrait-upload-hint">Add Photo</span>
+              </div>
+            </div>
+            <span class="card-name">Ajay Yadav</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <span class="v-label">alphonics.wav</span>
+    <span class="panel-num">05 / 07</span>
+  </section>
+
+  <!-- ── P6: DONATE ── -->
+  <section class="panel" id="p6">
+    <div class="donate-inner">
+
+      <!-- LEFT: quotes -->
+      <div class="donate-left">
+        <div class="donate-bg-symbol">♪</div>
+        <p class="section-eyebrow">Support Us</p>
+        <h2 class="section-heading">Fuel the<br>Music</h2>
+        <p class="donate-intro">Every riff, every beat, every late-night rehearsal costs something. Your generosity keeps the music alive and the stage lights on.</p>
+
+        <div class="quotes-stack">
+          <div class="quote-block">
+            <span class="quote-mark">"</span>
+            <p class="quote-text">Music is the shorthand of emotion — and every donation writes another verse in our story.</p>
+            <span class="quote-attr">— The Alphonics</span>
+          </div>
+          <div class="quote-block">
+            <span class="quote-mark">"</span>
+            <p class="quote-text">You don't just fund a band — you fund a feeling. Every rupee becomes a note someone will remember forever.</p>
+            <span class="quote-attr">— A Fan's Truth</span>
+          </div>
+          <div class="quote-block">
+            <span class="quote-mark">"</span>
+            <p class="quote-text">Without patrons, there is no art. Without art, there is no soul. Be the reason we keep playing.</p>
+            <span class="quote-attr">— From Our Stage to Yours</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: QR + Bank -->
+      <div class="donate-right">
+        <p class="section-eyebrow">Payment Details</p>
+
+        <div class="qr-wrapper">
+          <span class="qr-label">Scan to Pay via UPI</span>
+          <!-- QR Code SVG — replace src with your actual QR PNG/SVG -->
+          <div class="qr-frame">
+            <svg width="140" height="140" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+              <!-- Finder patterns -->
+              <rect x="10" y="10" width="40" height="40" fill="#111" rx="3"></rect>
+              <rect x="15" y="15" width="30" height="30" fill="#fff" rx="2"></rect>
+              <rect x="20" y="20" width="20" height="20" fill="#111" rx="1"></rect>
+
+              <rect x="90" y="10" width="40" height="40" fill="#111" rx="3"></rect>
+              <rect x="95" y="15" width="30" height="30" fill="#fff" rx="2"></rect>
+              <rect x="100" y="20" width="20" height="20" fill="#111" rx="1"></rect>
+
+              <rect x="10" y="90" width="40" height="40" fill="#111" rx="3"></rect>
+              <rect x="15" y="95" width="30" height="30" fill="#fff" rx="2"></rect>
+              <rect x="20" y="100" width="20" height="20" fill="#111" rx="1"></rect>
+
+              <!-- Data modules (decorative pattern) -->
+              <rect x="58" y="10" width="8" height="8" fill="#111"></rect><rect x="68" y="10" width="8" height="8" fill="#111"></rect>
+              <rect x="58" y="20" width="8" height="8" fill="#111"></rect><rect x="68" y="28" width="8" height="8" fill="#111"></rect>
+              <rect x="58" y="36" width="8" height="8" fill="#111"></rect>
+
+              <rect x="10" y="58" width="8" height="8" fill="#111"></rect><rect x="20" y="58" width="8" height="8" fill="#111"></rect>
+              <rect x="36" y="58" width="8" height="8" fill="#111"></rect><rect x="10" y="68" width="8" height="8" fill="#111"></rect>
+              <rect x="28" y="68" width="8" height="8" fill="#111"></rect><rect x="36" y="76" width="8" height="8" fill="#111"></rect>
+
+              <rect x="58" y="58" width="8" height="8" fill="#111"></rect><rect x="68" y="58" width="8" height="8" fill="#111"></rect>
+              <rect x="78" y="58" width="8" height="8" fill="#111"></rect><rect x="88" y="58" width="8" height="8" fill="#111"></rect>
+              <rect x="58" y="68" width="8" height="8" fill="#111"></rect><rect x="78" y="68" width="8" height="8" fill="#111"></rect>
+              <rect x="68" y="78" width="8" height="8" fill="#111"></rect><rect x="88" y="78" width="8" height="8" fill="#111"></rect>
+
+              <rect x="58" y="90" width="8" height="8" fill="#111"></rect><rect x="78" y="90" width="8" height="8" fill="#111"></rect>
+              <rect x="88" y="90" width="8" height="8" fill="#111"></rect><rect x="58" y="100" width="8" height="8" fill="#111"></rect>
+              <rect x="68" y="110" width="8" height="8" fill="#111"></rect><rect x="88" y="100" width="8" height="8" fill="#111"></rect>
+              <rect x="78" y="120" width="8" height="8" fill="#111"></rect><rect x="88" y="120" width="8" height="8" fill="#111"></rect>
+
+              <rect x="100" y="58" width="8" height="8" fill="#111"></rect><rect x="120" y="58" width="8" height="8" fill="#111"></rect>
+              <rect x="110" y="68" width="8" height="8" fill="#111"></rect><rect x="100" y="78" width="8" height="8" fill="#111"></rect>
+              <rect x="120" y="78" width="8" height="8" fill="#111"></rect>
+
+              <rect x="100" y="90" width="8" height="8" fill="#111"></rect><rect x="120" y="90" width="8" height="8" fill="#111"></rect>
+              <rect x="110" y="100" width="8" height="8" fill="#111"></rect><rect x="100" y="110" width="8" height="8" fill="#111"></rect>
+              <rect x="120" y="110" width="8" height="8" fill="#111"></rect><rect x="110" y="120" width="8" height="8" fill="#111"></rect>
+            </svg>
+          </div>
+          <p class="qr-note">⚠ Replace this QR with your actual UPI QR code</p>
+        </div>
+
+        <div class="bank-block">
+          <div class="bank-row">
+            <span class="bank-key">UPI ID</span>
+            <span class="bank-val">alphonics@upi <span class="upi-pill">UPI</span></span>
+          </div>
+          <div class="bank-row">
+            <span class="bank-key">Account</span>
+            <span class="bank-val">XXXX XXXX XXXX 0000</span>
+          </div>
+          <div class="bank-row">
+            <span class="bank-key">IFSC</span>
+            <span class="bank-val">SBIN0000000</span>
+          </div>
+          <div class="bank-row">
+            <span class="bank-key">Bank</span>
+            <span class="bank-val">State Bank of India</span>
+          </div>
+          <div class="bank-row">
+            <span class="bank-key">Name</span>
+            <span class="bank-val">Alphonics Band</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <span class="v-label">Support Alphonics</span>
+    <span class="panel-num">06 / 07</span>
+  </section>
+
+  <!-- ── P7: HIRE US ── -->
+  <section class="panel" id="p7">
+    <div class="hire-inner">
+
+      <!-- LEFT: info -->
+      <div class="hire-left">
+        <div class="hire-bg-text">HIRE</div>
+        <p class="section-eyebrow">Book Us</p>
+        <h2 class="section-heading">Let's Make<br>Your Event<br>Unforgettable</h2>
+        <p class="hire-sub">From intimate acoustic sets to full electric gigs — Alphonics brings raw energy and genuine soul to every stage. Tell us about your event and we'll make it legendary.</p>
+
+        <div class="hire-details">
+          <div class="hire-detail-row">
+            <div class="hd-icon">📍</div>
+            <div class="hd-text"><strong>Location</strong>Delhi NCR &amp; Pan India</div>
+          </div>
+          <div class="hire-detail-row">
+            <div class="hd-icon">🎸</div>
+            <div class="hd-text"><strong>Event Types</strong>Weddings · College Fests · Corporates · Private Gigs · Open Mics</div>
+          </div>
+          <div class="hire-detail-row">
+            <div class="hd-icon">📩</div>
+            <div class="hd-text"><strong>Instagram DM</strong>@alphonics.wav</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: form -->
+      <div class="hire-right">
+        <p class="form-title">Send Us a Message</p>
+        <div class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="field-wrap">
+              <label>Your Name</label>
+              <input type="text" placeholder="Full name" id="f-name">
+            </div>
+            <div class="field-wrap">
+              <label>Phone / Email</label>
+              <input type="text" placeholder="Contact info" id="f-contact">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field-wrap">
+              <label>Event Type</label>
+              <select id="f-event">
+                <option value="" disabled="" selected="">Select type</option>
+                <option>Wedding</option>
+                <option>College Fest</option>
+                <option>Corporate Event</option>
+                <option>Private Party</option>
+                <option>Open Mic</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field-wrap">
+              <label>Event Date</label>
+              <input type="text" placeholder="DD / MM / YYYY" id="f-date">
+            </div>
+          </div>
+          <div class="field-wrap">
+            <label>Venue &amp; City</label>
+            <input type="text" placeholder="Where is the event?" id="f-venue">
+          </div>
+          <div class="field-wrap">
+            <label>Tell Us More</label>
+            <textarea rows="3" placeholder="Expected guests, set duration, vibe, any special requests…" id="f-msg"></textarea>
+          </div>
+          <button class="form-submit" onclick="submitForm()">Send Booking Request →</button>
+          <p class="form-note" id="formNote">We'll get back to you within 24 hours via Instagram or your contact info.</p>
+        </div>
+      </div>
+    </div>
+    <span class="v-label">Book Alphonics</span>
+    <span class="panel-num">07 / 07</span>
+  </section>
+
+</div><!-- /track -->
+
+<!-- FOOTER STRIP -->
+<div class="footer-strip">
+  <span class="footer-logo-wrap"><svg class="footer-wordmark" viewBox="169 487 762 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M263.665 610.886H283.997L269.066 578.801H249.688L263.665 610.886Z" fill="currentColor"/>
+<path d="M216.652 548.146H196.797L226.023 487.945L266.051 571.495H230.789L245.561 610.728L207.598 556.564H239.842L226.023 526.067L216.652 548.146Z" fill="currentColor"/>
+<path d="M189.173 611.205H169L195.685 551.799L206.963 570.542L189.173 611.205Z" fill="currentColor"/>
+<path d="M313.546 607.965L361.998 596V611.204H296V522.127H313.546V607.965Z" fill="currentColor"/>
+<path d="M422.04 520.701C436.886 520.701 449.033 532.713 449.033 547.694C449.033 562.541 436.886 574.552 422.04 574.552H391.538V609.644L373.992 631.205V572.528H395.722L391.538 562.541L376.692 527.449L373.992 520.701H422.04ZM425.819 565.915C429.868 561.866 432.432 556.197 432.432 549.989C432.432 537.572 422.31 527.449 409.893 527.449H379.256C383.305 534.063 387.489 540.811 391.538 547.424C396.666 555.792 401.66 564.16 406.789 572.528H409.893C416.101 572.528 421.77 569.964 425.819 565.915Z" fill="currentColor"/>
+<path d="M534.865 504.5V611.205H517.32V563.832V570.5L486.818 563.832C486.818 563.832 486.818 563.832 486.683 563.832C484.523 563.832 482.634 564.642 481.149 565.992C480.339 566.801 479.664 567.746 479.259 568.691C478.855 569.771 478.585 570.85 478.585 571.93C478.585 572.065 478.585 572.065 478.585 572.065V611.205H461.039V522.263H478.45V561.673C473.321 563.832 470.757 567.881 470.757 567.881C471.701 567.206 472.511 566.666 473.456 566.262C473.861 565.992 474.266 565.857 474.671 565.587C474.941 565.452 475.075 565.317 475.345 565.317C475.615 565.047 476.02 564.912 476.425 564.777C477.1 564.507 477.775 564.237 478.45 564.102C480.474 563.427 482.769 563.022 484.928 563.022C485.198 563.022 485.468 563.022 485.738 563.022H517.32V522.263L534.865 504.5Z" fill="currentColor"/>
+<path d="M590.858 522.263C615.287 522.263 634.992 542.238 634.992 566.801C634.992 591.365 615.152 611.205 590.858 611.205C566.564 611.205 546.859 591.365 546.859 566.801C546.859 542.238 566.564 522.263 590.858 522.263ZM590.858 609.99C605.704 609.99 617.716 590.69 617.716 566.801C617.716 542.912 605.704 523.477 590.858 523.477C576.012 523.477 564 542.912 564 566.801C564 590.69 576.012 609.99 590.858 609.99Z" fill="currentColor"/>
+<path d="M717.309 522.127V611.204H693.555V611.069L692.071 608.1L649.826 527.661V569.905L668.047 611.204H646.992V522.127H669.666L703.408 586.506L705.027 589.475L714.475 607.56V563.426L696.255 522.127H717.309Z" fill="currentColor"/>
+<path d="M746.858 503C746.858 532.692 746.858 581.648 746.858 611.205L729.312 633V522.263L746.858 503Z" fill="currentColor"/>
+<path d="M803.263 609.99C812.306 609.99 820.269 602.972 825.263 592.175L833.36 599.598C825.532 606.886 814.87 611.205 803.398 611.205H803.263C778.699 611.205 758.859 591.365 758.859 566.801C758.859 542.238 778.699 522.263 803.263 522.263H803.398C815.005 522.263 825.532 526.717 833.36 534.005L825.263 541.428C820.269 530.631 812.306 523.477 803.263 523.477C788.282 523.477 776.135 542.912 776.135 566.801C776.135 590.69 788.282 609.99 803.263 609.99Z" fill="currentColor"/>
+<path d="M922.155 586.878C921.885 590.252 921.075 593.626 919.456 596.595C917.836 599.429 915.811 601.994 913.247 603.883C910.818 605.908 907.983 607.123 905.284 608.202C899.886 610.227 894.217 610.902 888.683 611.171C883.15 611.306 877.616 611.037 872.218 610.227C869.518 609.687 866.684 609.147 863.985 608.202C861.42 607.257 858.721 606.043 856.157 604.423C853.727 602.939 851.298 600.914 849.138 598.62C848.329 597.675 847.519 596.595 846.709 595.515L853.862 589.442C853.862 591.466 854.132 593.356 854.807 595.111C855.617 597.405 856.966 599.564 858.721 601.319C860.476 603.343 862.635 604.828 864.929 606.043C867.224 607.392 869.788 608.337 872.487 609.012C875.997 609.822 879.641 610.227 883.42 610.227C885.174 610.227 886.929 610.092 888.683 609.957C894.082 609.282 899.346 607.932 903.8 605.098C905.959 603.613 907.983 601.994 909.333 600.104C910.818 598.215 911.763 596.055 912.167 593.761C912.572 591.601 912.437 589.442 912.032 587.283L911.628 585.798L910.953 584.448C910.818 584.043 910.548 583.638 910.278 583.369L910.008 582.829C909.873 582.559 909.603 582.424 909.468 582.289C908.388 581.074 907.039 580.264 905.419 579.455C903.665 578.78 901.64 577.97 899.346 577.565C894.892 576.485 889.898 575.675 884.499 574.866C879.236 573.921 873.567 572.976 867.764 571.087C864.794 570.142 861.825 568.927 858.991 567.443C856.157 565.958 853.052 563.799 850.623 560.964C848.194 558.265 846.304 554.621 845.629 550.977C845.494 550.032 845.494 549.222 845.359 548.277C845.359 547.873 845.359 547.468 845.359 546.928C845.359 546.523 845.359 546.118 845.359 545.713C845.359 544.903 845.359 544.094 845.494 543.284C845.629 542.339 845.899 541.529 846.034 540.719C846.844 537.48 848.464 534.511 850.758 532.082C852.782 529.787 855.212 527.898 858.046 526.548C860.476 525.333 863.31 524.254 866.144 523.714C867.494 523.309 868.843 523.174 870.193 522.904C871.678 522.769 873.027 522.499 874.377 522.499C877.211 522.229 879.911 522.229 882.61 522.364C885.444 522.364 888.278 522.634 890.978 523.039C893.677 523.444 896.511 524.119 899.076 524.928C901.91 525.738 904.609 526.953 907.039 528.438C909.738 530.057 912.032 532.082 914.192 534.241C915.137 535.321 915.946 536.4 916.756 537.48C916.891 537.615 908.793 544.498 908.793 544.498C908.928 543.824 908.928 543.149 908.928 542.609C908.928 540.989 908.658 539.505 908.253 538.02C907.444 535.726 906.229 533.566 904.474 531.677C903.665 530.597 902.72 529.787 901.64 528.977C900.56 528.168 899.481 527.493 898.266 526.818C897.186 526.143 895.837 525.738 894.622 525.198C893.407 524.793 892.058 524.389 890.708 524.119C885.444 522.769 879.911 522.769 874.512 523.579C871.813 523.984 869.248 524.523 866.684 525.603C864.255 526.548 861.96 527.898 859.936 529.652C858.046 531.272 856.427 533.161 855.347 535.321C854.537 537.075 853.997 538.965 853.997 540.989C853.997 541.259 853.997 541.529 854.132 541.799C854.132 542.339 854.267 542.879 854.267 543.419C854.402 543.824 854.537 544.498 854.672 545.038C854.807 545.443 854.942 545.983 855.212 546.523C855.347 546.928 855.617 547.468 855.752 547.873C856.696 549.492 858.046 550.572 859.531 551.517C861.15 552.461 863.04 553.271 864.929 553.676C867.089 554.351 869.383 554.756 871.813 555.161C876.671 555.971 881.935 556.645 887.469 557.59C890.168 558.13 893.002 558.67 895.837 559.345C898.671 560.019 901.64 561.099 904.609 562.179C907.579 563.394 910.548 565.013 913.517 567.308C916.351 569.467 919.051 572.571 920.535 576.215C922.02 579.724 922.56 583.638 922.155 586.878Z" fill="currentColor"/>
+</svg><span style="opacity:0.4"> © 2025</span></span>
+  <span id="panelName">Home</span>
+  <span>Delhi, India</span>
+</div>
+
+<!-- HINT -->
+<div class="kbd-hint">Scroll · Swipe · Arrow Keys →</div>
+
+<script>
+  const PANELS = 7;
+  let cur = 0, locked = false;
+  const track     = document.getElementById('track');
+  const dots      = document.querySelectorAll('.nav-dot');
+  const bar       = document.getElementById('progressBar');
+  const pName     = document.getElementById('panelName');
+  const names     = ['Home','About','Band','Sound','Connect','Donate','Hire Us'];
+
+  function goTo(idx) {
+    if (idx < 0 || idx >= PANELS || locked) return;
+    cur = idx; locked = true;
+    track.style.transform = `translateX(-${cur * 100}vw)`;
+    dots.forEach((d,i) => d.classList.toggle('active', i === cur));
+    bar.style.width = (cur / (PANELS - 1) * 100) + '%';
+    pName.textContent = names[cur];
+    setTimeout(() => { locked = false; }, 800);
+  }
+
+  const isMobile = () => window.innerWidth <= 768;
+
+  // Wheel — desktop only
+  let wCool = false;
+  window.addEventListener('wheel', e => {
+    if (isMobile() || wCool) return;
+    wCool = true;
+    (e.deltaY > 0 || e.deltaX > 0) ? goTo(cur + 1) : goTo(cur - 1);
+    setTimeout(() => { wCool = false; }, 840);
+  }, { passive: true });
+
+  // Keyboard — desktop only
+  window.addEventListener('keydown', e => {
+    if (isMobile()) return;
+    if (e.key==='ArrowRight'||e.key==='ArrowDown') goTo(cur+1);
+    if (e.key==='ArrowLeft' ||e.key==='ArrowUp')   goTo(cur-1);
+  });
+
+  // Touch — desktop only (mobile uses native scroll)
+  let tx=0, ty=0;
+  window.addEventListener('touchstart', e => {
+    tx = e.touches[0].clientX;
+    ty = e.touches[0].clientY;
+  }, {passive:true});
+  window.addEventListener('touchend', e => {
+    if (isMobile()) return;
+    const dx = tx - e.changedTouches[0].clientX;
+    const dy = ty - e.changedTouches[0].clientY;
+    if (Math.abs(dx) > Math.abs(dy) * 1.8 && Math.abs(dx) > 50) {
+      dx > 0 ? goTo(cur + 1) : goTo(cur - 1);
+    }
+  }, {passive:true});
+
+  // Wave bars
+  const wb = document.getElementById('waveBars');
+  for (let i=0;i<34;i++){
+    const b=document.createElement('div'); b.className='wave-bar';
+    const h=Math.random()*70+20;
+    b.style.cssText=`height:${h}%;animation-delay:${(i*0.05).toFixed(2)}s;animation-duration:${(0.9+Math.random()*0.9).toFixed(2)}s`;
+    wb.appendChild(b);
+  }
+
+  // Form submit (demo)
+  function submitForm(){
+    const name    = document.getElementById('f-name').value.trim();
+    const contact = document.getElementById('f-contact').value.trim();
+    const event   = document.getElementById('f-event').value;
+    const note    = document.getElementById('formNote');
+    if (!name || !contact || !event) {
+      note.style.color = 'rgba(201,100,80,0.8)';
+      note.textContent = '⚠ Please fill in your name, contact, and event type.';
+      return;
+    }
+    note.style.color = 'rgba(255,204,0,0.8)';
+    note.textContent = `✓ Message sent, ${name}! We'll reach out to you soon.`;
+    ['f-name','f-contact','f-venue','f-msg'].forEach(id => document.getElementById(id).value='');
+    document.getElementById('f-event').selectedIndex=0;
+    document.getElementById('f-date').value='';
+  }
+  // ── ARTIST DATA ──
+  const ARTISTS = {
+    aman: {
+      index: '01 / 05',
+      initials: 'AD',
+      photo: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjMwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+CiAgPGRlZnM+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9ImJnX2FkaXR5YSIgY3g9IjUwJSIgY3k9IjQwJSIgcj0iNjAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFhMTYxMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzA2MDUwNCIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0ic2tpbl9hZGl0eWEiIGN4PSI1MCUiIGN5PSI0MCUiIHI9IjU1JSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNCNTY5M0UiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI0I1NjkzRSIgc3RvcC1vcGFjaXR5PSIwLjg1Ii8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIzMCIgZmlsbD0idXJsKCNiZ19hZGl0eWEpIi8+CiAgPGxpbmUgeDE9IjAiIHkxPSIyMjAiIHgyPSIyMDAiIHkyPSIyMjAiIHN0cm9rZT0iI2ZmY2MwMCIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjQiLz4KICA8cGF0aCBkPSJNMCAyMzAgUTAgMTc1IDMwIDE2NSBRNjUgMTU1IDEwMCAxNTIgUTEzNSAxNTUgMTcwIDE2NSBRMjAwIDE3NSAyMDAgMjMwWiIgZmlsbD0iIzExMTAwOSIvPgogIDxwYXRoIGQ9Ik0wIDIzMCBRMCAxODAgMjUgMTcwIFE2MCAxNTggMTAwIDE1NSBRMTQwIDE1OCAxNzUgMTcwIFEyMDAgMTgwIDIwMCAyMzBaIiBmaWxsPSIjMGMwYjA5Ii8+CiAgPHJlY3QgeD0iODQiIHk9IjE0MCIgd2lkdGg9IjMyIiBoZWlnaHQ9IjIyIiByeD0iNiIgZmlsbD0idXJsKCNza2luX2FkaXR5YSkiLz4KICA8ZWxsaXBzZSBjeD0iNDkiIGN5PSIxMTIiIHJ4PSI4IiByeT0iMTEiIGZpbGw9InVybCgjc2tpbl9hZGl0eWEpIi8+CiAgPGVsbGlwc2UgY3g9IjUxIiBjeT0iMTEyIiByeD0iNSIgcnk9IjgiIGZpbGw9IiNCNTY5M0UiIG9wYWNpdHk9IjAuNSIvPgogIDxlbGxpcHNlIGN4PSIxNTEiIGN5PSIxMTIiIHJ4PSI4IiByeT0iMTEiIGZpbGw9InVybCgjc2tpbl9hZGl0eWEpIi8+CiAgPGVsbGlwc2UgY3g9IjE0OSIgY3k9IjExMiIgcng9IjUiIHJ5PSI4IiBmaWxsPSIjQjU2OTNFIiBvcGFjaXR5PSIwLjUiLz4KICA8ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMTEwIiByeD0iNTEiIHJ5PSI1OCIgZmlsbD0idXJsKCNza2luX2FkaXR5YSkiLz4KICA8ZWxsaXBzZSBjeD0iMTAwIiBjeT0iNTUiIHJ4PSI1MiIgcnk9IjQ4IiBmaWxsPSIjMTgwODAwIi8+PHBhdGggZD0iTTQ4IDcwIFEzMCAxMDAgMzIgMTUwIFEzNSAxNjUgNDIgMTcwIiBmaWxsPSIjMTgwODAwIi8+PHBhdGggZD0iTTE1MiA3MCBRMTcwIDEwMCAxNjggMTUwIFExNjUgMTY1IDE1OCAxNzAiIGZpbGw9IiMxODA4MDAiLz48cGF0aCBkPSJNNDggNjggUTQ0IDQ1IDY1IDM1IFExMDAgMjUgMTM1IDM1IFExNTYgNDUgMTUyIDY4IiBmaWxsPSIjMTgwODAwIi8+CiAgPHBhdGggZD0iTTcyIDkwIFE4MyA4NSA5NCA4OCIgc3Ryb2tlPSIjMTgwODAwIiBzdHJva2Utd2lkdGg9IjMiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik0xMDYgODggUTExNyA4NSAxMjggOTAiIHN0cm9rZT0iIzE4MDgwMCIgc3Ryb2tlLXdpZHRoPSIzIiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8ZWxsaXBzZSBjeD0iODMiIGN5PSIxMDAiIHJ4PSIxMCIgcnk9IjciIGZpbGw9IndoaXRlIi8+CiAgPGVsbGlwc2UgY3g9IjExNyIgY3k9IjEwMCIgcng9IjEwIiByeT0iNyIgZmlsbD0id2hpdGUiLz4KICA8Y2lyY2xlIGN4PSI4NSIgY3k9IjEwMSIgcj0iNiIgZmlsbD0iIzFhMGYwMCIvPgogIDxjaXJjbGUgY3g9IjExOSIgY3k9IjEwMSIgcj0iNiIgZmlsbD0iIzFhMGYwMCIvPgogIDxjaXJjbGUgY3g9Ijg2IiBjeT0iOTkiIHI9IjIiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuNyIvPgogIDxjaXJjbGUgY3g9IjEyMCIgY3k9Ijk5IiByPSIyIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjciLz4KICA8cGF0aCBkPSJNNzMgOTggUTgzIDkyIDkzIDk4IiBzdHJva2U9IiMxODA4MDAiIHN0cm9rZS13aWR0aD0iMS41IiBmaWxsPSJub25lIiBvcGFjaXR5PSIwLjYiLz4KICA8cGF0aCBkPSJNMTA3IDk4IFExMTcgOTIgMTI3IDk4IiBzdHJva2U9IiMxODA4MDAiIHN0cm9rZS13aWR0aD0iMS41IiBmaWxsPSJub25lIiBvcGFjaXR5PSIwLjYiLz4KICA8cGF0aCBkPSJNOTcgMTA3IFE5NCAxMjIgOTAgMTI2IFExMDAgMTMwIDExMCAxMjYgUTEwNiAxMjIgMTAzIDEwN1oiIGZpbGw9IiNCNTY5M0UiIG9wYWNpdHk9IjAuNCIvPgogIDxjaXJjbGUgY3g9IjkzIiBjeT0iMTI3IiByPSI0IiBmaWxsPSIjQjU2OTNFIiBvcGFjaXR5PSIwLjM1Ii8+CiAgPGNpcmNsZSBjeD0iMTA3IiBjeT0iMTI3IiByPSI0IiBmaWxsPSIjQjU2OTNFIiBvcGFjaXR5PSIwLjM1Ii8+CiAgPHBhdGggZD0iTTg2IDE0MCBRMTAwIDE1MCAxMTQgMTQwIiBzdHJva2U9IiNiMzYyMDAiIHN0cm9rZS13aWR0aD0iMi41IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8cGF0aCBkPSJNODggMTQwIFExMDAgMTQ1IDExMiAxNDAiIGZpbGw9IiNjYzY2MjIiIG9wYWNpdHk9IjAuNSIvPgogIDxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjMwIiBmaWxsPSIjZmZjYzAwIiBvcGFjaXR5PSIwLjAyIi8+Cjwvc3ZnPg==',
+      bgName: 'AMAN',
+      eyebrow: 'Alphonics · Lead Vocalist',
+      name: 'Aman Vishal\nDwivedi',
+      role: 'Lead Singer',
+      bio: 'The voice that anchors Alphonics. Aman brings a rare blend of raw power and delicate restraint — capable of hushed intimacy one moment and thunderous delivery the next. His stage presence is the emotional core of every live set.',
+      tags: ['Live Performance', 'Songwriting', 'Vocal Arrangements', 'Stage Presence'],
+      ig: 'https://www.instagram.com/alphonics.wav'
+    },
+    sagar: {
+      index: '02 / 05',
+      initials: 'SR',
+      photo: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjMwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+CiAgPGRlZnM+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9ImJnX2FiaGlzaGVrIiBjeD0iNTAlIiBjeT0iNDAlIiByPSI2MCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMWExNjEwIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDYwNTA0Ii8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJza2luX2FiaGlzaGVrIiBjeD0iNTAlIiBjeT0iNDAlIiByPSI1NSUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjOEI1QTM1IiBzdG9wLW9wYWNpdHk9IjEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4QjVBMzUiIHN0b3Atb3BhY2l0eT0iMC44NSIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMzAiIGZpbGw9InVybCgjYmdfYWJoaXNoZWspIi8+CiAgPGxpbmUgeDE9IjAiIHkxPSIyMjAiIHgyPSIyMDAiIHkyPSIyMjAiIHN0cm9rZT0iI2ZmY2MwMCIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjQiLz4KICA8cGF0aCBkPSJNMCAyMzAgUTAgMTc1IDMwIDE2NSBRNjUgMTU1IDEwMCAxNTIgUTEzNSAxNTUgMTcwIDE2NSBRMjAwIDE3NSAyMDAgMjMwWiIgZmlsbD0iIzExMTAwOSIvPgogIDxwYXRoIGQ9Ik0wIDIzMCBRMCAxODAgMjUgMTcwIFE2MCAxNTggMTAwIDE1NSBRMTQwIDE1OCAxNzUgMTcwIFEyMDAgMTgwIDIwMCAyMzBaIiBmaWxsPSIjMGMwYjA5Ii8+CiAgPHJlY3QgeD0iODQiIHk9IjE0MCIgd2lkdGg9IjMyIiBoZWlnaHQ9IjIyIiByeD0iNiIgZmlsbD0idXJsKCNza2luX2FiaGlzaGVrKSIvPgogIDxlbGxpcHNlIGN4PSI0OSIgY3k9IjExMiIgcng9IjgiIHJ5PSIxMSIgZmlsbD0idXJsKCNza2luX2FiaGlzaGVrKSIvPgogIDxlbGxpcHNlIGN4PSI1MSIgY3k9IjExMiIgcng9IjUiIHJ5PSI4IiBmaWxsPSIjOEI1QTM1IiBvcGFjaXR5PSIwLjUiLz4KICA8ZWxsaXBzZSBjeD0iMTUxIiBjeT0iMTEyIiByeD0iOCIgcnk9IjExIiBmaWxsPSJ1cmwoI3NraW5fYWJoaXNoZWspIi8+CiAgPGVsbGlwc2UgY3g9IjE0OSIgY3k9IjExMiIgcng9IjUiIHJ5PSI4IiBmaWxsPSIjOEI1QTM1IiBvcGFjaXR5PSIwLjUiLz4KICA8ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMTEwIiByeD0iNTEiIHJ5PSI1OCIgZmlsbD0idXJsKCNza2luX2FiaGlzaGVrKSIvPgogIDxlbGxpcHNlIGN4PSIxMDAiIGN5PSI2MiIgcng9IjUxIiByeT0iNDYiIGZpbGw9IiMxMDA0MDAiIG9wYWNpdHk9IjAuOSIvPjxwYXRoIGQ9Ik00OSA3NSBRNDggNTUgNjUgNDIgUTEwMCAzMiAxMzUgNDIgUTE1MiA1NSAxNTEgNzUiIGZpbGw9IiMxMDA0MDAiLz4KICA8cGF0aCBkPSJNNzIgOTAgUTgzIDg1IDk0IDg4IiBzdHJva2U9IiMxMDA0MDAiIHN0cm9rZS13aWR0aD0iMyIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBhdGggZD0iTTEwNiA4OCBRMTE3IDg1IDEyOCA5MCIgc3Ryb2tlPSIjMTAwNDAwIiBzdHJva2Utd2lkdGg9IjMiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxlbGxpcHNlIGN4PSI4MyIgY3k9IjEwMCIgcng9IjEwIiByeT0iNyIgZmlsbD0id2hpdGUiLz4KICA8ZWxsaXBzZSBjeD0iMTE3IiBjeT0iMTAwIiByeD0iMTAiIHJ5PSI3IiBmaWxsPSJ3aGl0ZSIvPgogIDxjaXJjbGUgY3g9Ijg1IiBjeT0iMTAxIiByPSI2IiBmaWxsPSIjMWEwZjAwIi8+CiAgPGNpcmNsZSBjeD0iMTE5IiBjeT0iMTAxIiByPSI2IiBmaWxsPSIjMWEwZjAwIi8+CiAgPGNpcmNsZSBjeD0iODYiIGN5PSI5OSIgcj0iMiIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC43Ii8+CiAgPGNpcmNsZSBjeD0iMTIwIiBjeT0iOTkiIHI9IjIiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuNyIvPgogIDxwYXRoIGQ9Ik03MyA5OCBRODMgOTIgOTMgOTgiIHN0cm9rZT0iIzEwMDQwMCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGZpbGw9Im5vbmUiIG9wYWNpdHk9IjAuNiIvPgogIDxwYXRoIGQ9Ik0xMDcgOTggUTExNyA5MiAxMjcgOTgiIHN0cm9rZT0iIzEwMDQwMCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGZpbGw9Im5vbmUiIG9wYWNpdHk9IjAuNiIvPgogIDxwYXRoIGQ9Ik05NyAxMDcgUTk0IDEyMiA5MCAxMjYgUTEwMCAxMzAgMTEwIDEyNiBRMTA2IDEyMiAxMDMgMTA3WiIgZmlsbD0iIzhCNUEzNSIgb3BhY2l0eT0iMC40Ii8+CiAgPGNpcmNsZSBjeD0iOTMiIGN5PSIxMjciIHI9IjQiIGZpbGw9IiM4QjVBMzUiIG9wYWNpdHk9IjAuMzUiLz4KICA8Y2lyY2xlIGN4PSIxMDciIGN5PSIxMjciIHI9IjQiIGZpbGw9IiM4QjVBMzUiIG9wYWNpdHk9IjAuMzUiLz4KICA8cGF0aCBkPSJNODYgMTQwIFExMDAgMTUwIDExNCAxNDAiIHN0cm9rZT0iI2IzNjIwMCIgc3Ryb2tlLXdpZHRoPSIyLjUiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik04OCAxNDAgUTEwMCAxNDUgMTEyIDE0MCIgZmlsbD0iI2NjNjYyMiIgb3BhY2l0eT0iMC41Ii8+CiAgPHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMzAiIGZpbGw9IiNmZmNjMDAiIG9wYWNpdHk9IjAuMDIiLz4KPC9zdmc+',
+      bgName: 'SAGAR',
+      eyebrow: 'Alphonics · Guitarist',
+      name: 'Sagar\nRaturi',
+      role: 'Acoustic Guitar & Vocals',
+      bio: 'Sagar is the harmonic soul of the band. His fingerpicking weaves textures beneath the melody — equal parts technical precision and intuitive feel. When he lends his voice to harmonies, the room shifts.',
+      tags: ['Fingerstyle', 'Chord Melody', 'Harmony Vocals', 'Acoustic'],
+      ig: 'https://www.instagram.com/alphonics.wav'
+    },
+    aditya: {
+      index: '03 / 05',
+      initials: 'AD',
+      photo: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjMwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+CiAgPGRlZnM+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9ImJnX2FiaGlzaGVrIiBjeD0iNTAlIiBjeT0iNDAlIiByPSI2MCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMWExNjEwIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDYwNTA0Ii8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJza2luX2FiaGlzaGVrIiBjeD0iNTAlIiBjeT0iNDAlIiByPSI1NSUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjOEI1QTM1IiBzdG9wLW9wYWNpdHk9IjEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4QjVBMzUiIHN0b3Atb3BhY2l0eT0iMC44NSIvPgogICAgPC9yYWRpYWxHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMzAiIGZpbGw9InVybCgjYmdfYWJoaXNoZWspIi8+CiAgPGxpbmUgeDE9IjAiIHkxPSIyMjAiIHgyPSIyMDAiIHkyPSIyMjAiIHN0cm9rZT0iI2ZmY2MwMCIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjQiLz4KICA8cGF0aCBkPSJNMCAyMzAgUTAgMTc1IDMwIDE2NSBRNjUgMTU1IDEwMCAxNTIgUTEzNSAxNTUgMTcwIDE2NSBRMjAwIDE3NSAyMDAgMjMwWiIgZmlsbD0iIzExMTAwOSIvPgogIDxwYXRoIGQ9Ik0wIDIzMCBRMCAxODAgMjUgMTcwIFE2MCAxNTggMTAwIDE1NSBRMTQwIDE1OCAxNzUgMTcwIFEyMDAgMTgwIDIwMCAyMzBaIiBmaWxsPSIjMGMwYjA5Ii8+CiAgPHJlY3QgeD0iODQiIHk9IjE0MCIgd2lkdGg9IjMyIiBoZWlnaHQ9IjIyIiByeD0iNiIgZmlsbD0idXJsKCNza2luX2FiaGlzaGVrKSIvPgogIDxlbGxpcHNlIGN4PSI0OSIgY3k9IjExMiIgcng9IjgiIHJ5PSIxMSIgZmlsbD0idXJsKCNza2luX2FiaGlzaGVrKSIvPgogIDxlbGxpcHNlIGN4PSI1MSIgY3k9IjExMiIgcng9IjUiIHJ5PSI4IiBmaWxsPSIjOEI1QTM1IiBvcGFjaXR5PSIwLjUiLz4KICA8ZWxsaXBzZSBjeD0iMTUxIiBjeT0iMTEyIiByeD0iOCIgcnk9IjExIiBmaWxsPSJ1cmwoI3NraW5fYWJoaXNoZWspIi8+CiAgPGVsbGlwc2UgY3g9IjE0OSIgY3k9IjExMiIgcng9IjUiIHJ5PSI4IiBmaWxsPSIjOEI1QTM1IiBvcGFjaXR5PSIwLjUiLz4KICA8ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMTEwIiByeD0iNTEiIHJ5PSI1OCIgZmlsbD0idXJsKCNza2luX2FiaGlzaGVrKSIvPgogIDxlbGxpcHNlIGN4PSIxMDAiIGN5PSI2MiIgcng9IjUxIiByeT0iNDYiIGZpbGw9IiMxMDA0MDAiIG9wYWNpdHk9IjAuOSIvPjxwYXRoIGQ9Ik00OSA3NSBRNDggNTUgNjUgNDIgUTEwMCAzMiAxMzUgNDIgUTE1MiA1NSAxNTEgNzUiIGZpbGw9IiMxMDA0MDAiLz4KICA8cGF0aCBkPSJNNzIgOTAgUTgzIDg1IDk0IDg4IiBzdHJva2U9IiMxMDA0MDAiIHN0cm9rZS13aWR0aD0iMyIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBhdGggZD0iTTEwNiA4OCBRMTE3IDg1IDEyOCA5MCIgc3Ryb2tlPSIjMTAwNDAwIiBzdHJva2Utd2lkdGg9IjMiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxlbGxpcHNlIGN4PSI4MyIgY3k9IjEwMCIgcng9IjEwIiByeT0iNyIgZmlsbD0id2hpdGUiLz4KICA8ZWxsaXBzZSBjeD0iMTE3IiBjeT0iMTAwIiByeD0iMTAiIHJ5PSI3IiBmaWxsPSJ3aGl0ZSIvPgogIDxjaXJjbGUgY3g9Ijg1IiBjeT0iMTAxIiByPSI2IiBmaWxsPSIjMWEwZjAwIi8+CiAgPGNpcmNsZSBjeD0iMTE5IiBjeT0iMTAxIiByPSI2IiBmaWxsPSIjMWEwZjAwIi8+CiAgPGNpcmNsZSBjeD0iODYiIGN5PSI5OSIgcj0iMiIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC43Ii8+CiAgPGNpcmNsZSBjeD0iMTIwIiBjeT0iOTkiIHI9IjIiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuNyIvPgogIDxwYXRoIGQ9Ik03MyA5OCBRODMgOTIgOTMgOTgiIHN0cm9rZT0iIzEwMDQwMCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGZpbGw9Im5vbmUiIG9wYWNpdHk9IjAuNiIvPgogIDxwYXRoIGQ9Ik0xMDcgOTggUTExNyA5MiAxMjcgOTgiIHN0cm9rZT0iIzEwMDQwMCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGZpbGw9Im5vbmUiIG9wYWNpdHk9IjAuNiIvPgogIDxwYXRoIGQ9Ik05NyAxMDcgUTk0IDEyMiA5MCAxMjYgUTEwMCAxMzAgMTEwIDEyNiBRMTA2IDEyMiAxMDMgMTA3WiIgZmlsbD0iIzhCNUEzNSIgb3BhY2l0eT0iMC40Ii8+CiAgPGNpcmNsZSBjeD0iOTMiIGN5PSIxMjciIHI9IjQiIGZpbGw9IiM4QjVBMzUiIG9wYWNpdHk9IjAuMzUiLz4KICA8Y2lyY2xlIGN4PSIxMDciIGN5PSIxMjciIHI9IjQiIGZpbGw9IiM4QjVBMzUiIG9wYWNpdHk9IjAuMzUiLz4KICA8cGF0aCBkPSJNODYgMTQwIFExMDAgMTUwIDExNCAxNDAiIHN0cm9rZT0iI2IzNjIwMCIgc3Ryb2tlLXdpZHRoPSIyLjUiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik04OCAxNDAgUTEwMCAxNDUgMTEyIDE0MCIgZmlsbD0iI2NjNjYyMiIgb3BhY2l0eT0iMC41Ii8+CiAgPHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMzAiIGZpbGw9IiNmZmNjMDAiIG9wYWNpdHk9IjAuMDIiLz4KPC9zdmc+',
+      bgName: 'ADITYA',
+      eyebrow: 'Alphonics · Guitarist',
+      name: 'Aditya',
+      role: 'Lead Acoustic & Electric Guitar',
+      bio: 'Aditya commands both worlds — the delicate and the electric. His lead lines carry the melodic identity of every track, shifting effortlessly from warm acoustic runs to distortion-drenched solos that define the band\'s heavier edge.',
+      tags: ['Lead Guitar', 'Electric', 'Acoustic', 'Riffs & Solos'],
+      ig: 'https://www.instagram.com/alphonics.wav'
+    },
+    abhishek: {
+      index: '04 / 05',
+      initials: 'AB',
+      photo: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjMwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+CiAgPGRlZnM+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9ImJnX3ByaXRpc2giIGN4PSI1MCUiIGN5PSI0MCUiIHI9IjYwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMxYTE2MTAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwNjA1MDQiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9InNraW5fcHJpdGlzaCIgY3g9IjUwJSIgY3k9IjQwJSIgcj0iNTUlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI0NCOEY2OCIgc3RvcC1vcGFjaXR5PSIxIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjQ0I4RjY4IiBzdG9wLW9wYWNpdHk9IjAuODUiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjMwIiBmaWxsPSJ1cmwoI2JnX3ByaXRpc2gpIi8+CiAgPGxpbmUgeDE9IjAiIHkxPSIyMjAiIHgyPSIyMDAiIHkyPSIyMjAiIHN0cm9rZT0iI2ZmY2MwMCIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjQiLz4KICA8cGF0aCBkPSJNMCAyMzAgUTAgMTc1IDMwIDE2NSBRNjUgMTU1IDEwMCAxNTIgUTEzNSAxNTUgMTcwIDE2NSBRMjAwIDE3NSAyMDAgMjMwWiIgZmlsbD0iIzExMTAwOSIvPgogIDxwYXRoIGQ9Ik0wIDIzMCBRMCAxODAgMjUgMTcwIFE2MCAxNTggMTAwIDE1NSBRMTQwIDE1OCAxNzUgMTcwIFEyMDAgMTgwIDIwMCAyMzBaIiBmaWxsPSIjMGMwYjA5Ii8+CiAgPHJlY3QgeD0iODQiIHk9IjE0MCIgd2lkdGg9IjMyIiBoZWlnaHQ9IjIyIiByeD0iNiIgZmlsbD0idXJsKCNza2luX3ByaXRpc2gpIi8+CiAgPGVsbGlwc2UgY3g9IjQ5IiBjeT0iMTEyIiByeD0iOCIgcnk9IjExIiBmaWxsPSJ1cmwoI3NraW5fcHJpdGlzaCkiLz4KICA8ZWxsaXBzZSBjeD0iNTEiIGN5PSIxMTIiIHJ4PSI1IiByeT0iOCIgZmlsbD0iI0NCOEY2OCIgb3BhY2l0eT0iMC41Ii8+CiAgPGVsbGlwc2UgY3g9IjE1MSIgY3k9IjExMiIgcng9IjgiIHJ5PSIxMSIgZmlsbD0idXJsKCNza2luX3ByaXRpc2gpIi8+CiAgPGVsbGlwc2UgY3g9IjE0OSIgY3k9IjExMiIgcng9IjUiIHJ5PSI4IiBmaWxsPSIjQ0I4RjY4IiBvcGFjaXR5PSIwLjUiLz4KICA8ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMTEwIiByeD0iNTEiIHJ5PSI1OCIgZmlsbD0idXJsKCNza2luX3ByaXRpc2gpIi8+CiAgPGVsbGlwc2UgY3g9IjEwMCIgY3k9IjU2IiByeD0iNTQiIHJ5PSI1MCIgZmlsbD0iIzFmMGMwMCIvPjxjaXJjbGUgY3g9IjYwIiBjeT0iNTIiIHI9IjE4IiBmaWxsPSIjMWYwYzAwIi8+PGNpcmNsZSBjeD0iNzgiIGN5PSIzOCIgcj0iMTYiIGZpbGw9IiMxZjBjMDAiLz48Y2lyY2xlIGN4PSIxMDAiIGN5PSIzMiIgcj0iMTgiIGZpbGw9IiMxZjBjMDAiLz48Y2lyY2xlIGN4PSIxMjIiIGN5PSIzOCIgcj0iMTYiIGZpbGw9IiMxZjBjMDAiLz48Y2lyY2xlIGN4PSIxNDAiIGN5PSI1MiIgcj0iMTgiIGZpbGw9IiMxZjBjMDAiLz48cGF0aCBkPSJNNDYgNzIgUTM4IDkwIDQwIDExNSIgZmlsbD0iIzFmMGMwMCIvPjxwYXRoIGQ9Ik0xNTQgNzIgUTE2MiA5MCAxNjAgMTE1IiBmaWxsPSIjMWYwYzAwIi8+CiAgPHBhdGggZD0iTTcyIDkwIFE4MyA4NSA5NCA4OCIgc3Ryb2tlPSIjMWYwYzAwIiBzdHJva2Utd2lkdGg9IjMiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik0xMDYgODggUTExNyA4NSAxMjggOTAiIHN0cm9rZT0iIzFmMGMwMCIgc3Ryb2tlLXdpZHRoPSIzIiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8ZWxsaXBzZSBjeD0iODMiIGN5PSIxMDAiIHJ4PSIxMCIgcnk9IjciIGZpbGw9IndoaXRlIi8+CiAgPGVsbGlwc2UgY3g9IjExNyIgY3k9IjEwMCIgcng9IjEwIiByeT0iNyIgZmlsbD0id2hpdGUiLz4KICA8Y2lyY2xlIGN4PSI4NSIgY3k9IjEwMSIgcj0iNiIgZmlsbD0iIzFhMGYwMCIvPgogIDxjaXJjbGUgY3g9IjExOSIgY3k9IjEwMSIgcj0iNiIgZmlsbD0iIzFhMGYwMCIvPgogIDxjaXJjbGUgY3g9Ijg2IiBjeT0iOTkiIHI9IjIiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuNyIvPgogIDxjaXJjbGUgY3g9IjEyMCIgY3k9Ijk5IiByPSIyIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjciLz4KICA8cGF0aCBkPSJNNzMgOTggUTgzIDkyIDkzIDk4IiBzdHJva2U9IiMxZjBjMDAiIHN0cm9rZS13aWR0aD0iMS41IiBmaWxsPSJub25lIiBvcGFjaXR5PSIwLjYiLz4KICA8cGF0aCBkPSJNMTA3IDk4IFExMTcgOTIgMTI3IDk4IiBzdHJva2U9IiMxZjBjMDAiIHN0cm9rZS13aWR0aD0iMS41IiBmaWxsPSJub25lIiBvcGFjaXR5PSIwLjYiLz4KICA8cGF0aCBkPSJNOTcgMTA3IFE5NCAxMjIgOTAgMTI2IFExMDAgMTMwIDExMCAxMjYgUTEwNiAxMjIgMTAzIDEwN1oiIGZpbGw9IiNDQjhGNjgiIG9wYWNpdHk9IjAuNCIvPgogIDxjaXJjbGUgY3g9IjkzIiBjeT0iMTI3IiByPSI0IiBmaWxsPSIjQ0I4RjY4IiBvcGFjaXR5PSIwLjM1Ii8+CiAgPGNpcmNsZSBjeD0iMTA3IiBjeT0iMTI3IiByPSI0IiBmaWxsPSIjQ0I4RjY4IiBvcGFjaXR5PSIwLjM1Ii8+CiAgPHBhdGggZD0iTTg2IDE0MCBRMTAwIDE1MCAxMTQgMTQwIiBzdHJva2U9IiNiMzYyMDAiIHN0cm9rZS13aWR0aD0iMi41IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8cGF0aCBkPSJNODggMTQwIFExMDAgMTQ1IDExMiAxNDAiIGZpbGw9IiNjYzY2MjIiIG9wYWNpdHk9IjAuNSIvPgogIDxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjMwIiBmaWxsPSIjZmZjYzAwIiBvcGFjaXR5PSIwLjAyIi8+Cjwvc3ZnPg==',
+      bgName: 'ABHISHEK',
+      eyebrow: 'Alphonics · Drummer',
+      name: 'Abhishek',
+      role: 'Lead Drums & Percussion',
+      bio: 'The heartbeat of Alphonics. Abhishek\'s drumming is architecture — every fill deliberate, every groove locked in. He holds the space for everyone else to soar, and when he lets loose, the entire room feels it in their chest.',
+      tags: ['Full Kit', 'Percussion', 'Groove', 'Live Timing'],
+      ig: 'https://www.instagram.com/alphonics.wav'
+    },
+    pritish: {
+      index: '05 / 05',
+      initials: 'PT',
+      photo: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjMwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+CiAgPGRlZnM+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9ImJnX3ByaXRpc2giIGN4PSI1MCUiIGN5PSI0MCUiIHI9IjYwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMxYTE2MTAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwNjA1MDQiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9InNraW5fcHJpdGlzaCIgY3g9IjUwJSIgY3k9IjQwJSIgcj0iNTUlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI0NCOEY2OCIgc3RvcC1vcGFjaXR5PSIxIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjQ0I4RjY4IiBzdG9wLW9wYWNpdHk9IjAuODUiLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjMwIiBmaWxsPSJ1cmwoI2JnX3ByaXRpc2gpIi8+CiAgPGxpbmUgeDE9IjAiIHkxPSIyMjAiIHgyPSIyMDAiIHkyPSIyMjAiIHN0cm9rZT0iI2ZmY2MwMCIgc3Ryb2tlLXdpZHRoPSIyIiBvcGFjaXR5PSIwLjQiLz4KICA8cGF0aCBkPSJNMCAyMzAgUTAgMTc1IDMwIDE2NSBRNjUgMTU1IDEwMCAxNTIgUTEzNSAxNTUgMTcwIDE2NSBRMjAwIDE3NSAyMDAgMjMwWiIgZmlsbD0iIzExMTAwOSIvPgogIDxwYXRoIGQ9Ik0wIDIzMCBRMCAxODAgMjUgMTcwIFE2MCAxNTggMTAwIDE1NSBRMTQwIDE1OCAxNzUgMTcwIFEyMDAgMTgwIDIwMCAyMzBaIiBmaWxsPSIjMGMwYjA5Ii8+CiAgPHJlY3QgeD0iODQiIHk9IjE0MCIgd2lkdGg9IjMyIiBoZWlnaHQ9IjIyIiByeD0iNiIgZmlsbD0idXJsKCNza2luX3ByaXRpc2gpIi8+CiAgPGVsbGlwc2UgY3g9IjQ5IiBjeT0iMTEyIiByeD0iOCIgcnk9IjExIiBmaWxsPSJ1cmwoI3NraW5fcHJpdGlzaCkiLz4KICA8ZWxsaXBzZSBjeD0iNTEiIGN5PSIxMTIiIHJ4PSI1IiByeT0iOCIgZmlsbD0iI0NCOEY2OCIgb3BhY2l0eT0iMC41Ii8+CiAgPGVsbGlwc2UgY3g9IjE1MSIgY3k9IjExMiIgcng9IjgiIHJ5PSIxMSIgZmlsbD0idXJsKCNza2luX3ByaXRpc2gpIi8+CiAgPGVsbGlwc2UgY3g9IjE0OSIgY3k9IjExMiIgcng9IjUiIHJ5PSI4IiBmaWxsPSIjQ0I4RjY4IiBvcGFjaXR5PSIwLjUiLz4KICA8ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMTEwIiByeD0iNTEiIHJ5PSI1OCIgZmlsbD0idXJsKCNza2luX3ByaXRpc2gpIi8+CiAgPGVsbGlwc2UgY3g9IjEwMCIgY3k9IjU2IiByeD0iNTQiIHJ5PSI1MCIgZmlsbD0iIzFmMGMwMCIvPjxjaXJjbGUgY3g9IjYwIiBjeT0iNTIiIHI9IjE4IiBmaWxsPSIjMWYwYzAwIi8+PGNpcmNsZSBjeD0iNzgiIGN5PSIzOCIgcj0iMTYiIGZpbGw9IiMxZjBjMDAiLz48Y2lyY2xlIGN4PSIxMDAiIGN5PSIzMiIgcj0iMTgiIGZpbGw9IiMxZjBjMDAiLz48Y2lyY2xlIGN4PSIxMjIiIGN5PSIzOCIgcj0iMTYiIGZpbGw9IiMxZjBjMDAiLz48Y2lyY2xlIGN4PSIxNDAiIGN5PSI1MiIgcj0iMTgiIGZpbGw9IiMxZjBjMDAiLz48cGF0aCBkPSJNNDYgNzIgUTM4IDkwIDQwIDExNSIgZmlsbD0iIzFmMGMwMCIvPjxwYXRoIGQ9Ik0xNTQgNzIgUTE2MiA5MCAxNjAgMTE1IiBmaWxsPSIjMWYwYzAwIi8+CiAgPHBhdGggZD0iTTcyIDkwIFE4MyA4NSA5NCA4OCIgc3Ryb2tlPSIjMWYwYzAwIiBzdHJva2Utd2lkdGg9IjMiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik0xMDYgODggUTExNyA4NSAxMjggOTAiIHN0cm9rZT0iIzFmMGMwMCIgc3Ryb2tlLXdpZHRoPSIzIiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8ZWxsaXBzZSBjeD0iODMiIGN5PSIxMDAiIHJ4PSIxMCIgcnk9IjciIGZpbGw9IndoaXRlIi8+CiAgPGVsbGlwc2UgY3g9IjExNyIgY3k9IjEwMCIgcng9IjEwIiByeT0iNyIgZmlsbD0id2hpdGUiLz4KICA8Y2lyY2xlIGN4PSI4NSIgY3k9IjEwMSIgcj0iNiIgZmlsbD0iIzFhMGYwMCIvPgogIDxjaXJjbGUgY3g9IjExOSIgY3k9IjEwMSIgcj0iNiIgZmlsbD0iIzFhMGYwMCIvPgogIDxjaXJjbGUgY3g9Ijg2IiBjeT0iOTkiIHI9IjIiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjAuNyIvPgogIDxjaXJjbGUgY3g9IjEyMCIgY3k9Ijk5IiByPSIyIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjciLz4KICA8cGF0aCBkPSJNNzMgOTggUTgzIDkyIDkzIDk4IiBzdHJva2U9IiMxZjBjMDAiIHN0cm9rZS13aWR0aD0iMS41IiBmaWxsPSJub25lIiBvcGFjaXR5PSIwLjYiLz4KICA8cGF0aCBkPSJNMTA3IDk4IFExMTcgOTIgMTI3IDk4IiBzdHJva2U9IiMxZjBjMDAiIHN0cm9rZS13aWR0aD0iMS41IiBmaWxsPSJub25lIiBvcGFjaXR5PSIwLjYiLz4KICA8cGF0aCBkPSJNOTcgMTA3IFE5NCAxMjIgOTAgMTI2IFExMDAgMTMwIDExMCAxMjYgUTEwNiAxMjIgMTAzIDEwN1oiIGZpbGw9IiNDQjhGNjgiIG9wYWNpdHk9IjAuNCIvPgogIDxjaXJjbGUgY3g9IjkzIiBjeT0iMTI3IiByPSI0IiBmaWxsPSIjQ0I4RjY4IiBvcGFjaXR5PSIwLjM1Ii8+CiAgPGNpcmNsZSBjeD0iMTA3IiBjeT0iMTI3IiByPSI0IiBmaWxsPSIjQ0I4RjY4IiBvcGFjaXR5PSIwLjM1Ii8+CiAgPHBhdGggZD0iTTg2IDE0MCBRMTAwIDE1MCAxMTQgMTQwIiBzdHJva2U9IiNiMzYyMDAiIHN0cm9rZS13aWR0aD0iMi41IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8cGF0aCBkPSJNODggMTQwIFExMDAgMTQ1IDExMiAxNDAiIGZpbGw9IiNjYzY2MjIiIG9wYWNpdHk9IjAuNSIvPgogIDxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjMwIiBmaWxsPSIjZmZjYzAwIiBvcGFjaXR5PSIwLjAyIi8+Cjwvc3ZnPg==',
+      bgName: 'PRITISH',
+      eyebrow: 'Alphonics · Band Manager',
+      name: 'Pritish\nTyagi',
+      role: 'Chorus & Band Manager',
+      bio: 'Pritish is the backbone behind the scenes and the voice that lifts the stage. As band manager he holds the vision together — logistics, bookings, and creative direction. As a chorus vocalist, he adds the layer that makes the whole greater than the sum of its parts.',
+      tags: ['Chorus Vocals', 'Band Management', 'Creative Direction', 'Bookings'],
+      ig: 'https://www.instagram.com/alphonics.wav'
+    }
+  };
+
+  // ── MODAL FUNCTIONS ──
+  function openArtist(id) {
+    const a = ARTISTS[id];
+    if (!a) return;
+
+    document.getElementById('mIndex').textContent    = a.index;
+    document.getElementById('mBgName').textContent   = a.bgName;
+    document.getElementById('mEyebrow').textContent  = a.eyebrow;
+    document.getElementById('mName').innerHTML       = a.name.replace('\n','<br>');
+    document.getElementById('mRole').textContent     = a.role;
+    document.getElementById('mBio').textContent      = a.bio;
+
+    // photo — show image if available, else initials
+    const mPhoto = document.getElementById('mPhoto');
+    if (a.photo) {
+      mPhoto.innerHTML = `<img src="${a.photo}" alt="${a.name.replace('\n',' ')}"
+        style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;filter:grayscale(20%) contrast(1.08);">`;
+    } else {
+      mPhoto.innerHTML = `<span class="modal-ph-initials">${a.initials}</span><span class="modal-ph-hint">Add Photo</span>`;
+    }
+
+    // tags
+    const tagsEl = document.getElementById('mTags');
+    tagsEl.innerHTML = a.tags.map(t => `<span class="modal-tag">${t}</span>`).join('');
+
+    // socials
+    document.getElementById('mSocials').innerHTML = `
+      <a href="${a.ig}" target="_blank" class="modal-ig-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+          <circle cx="12" cy="12" r="4"></circle>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle>
+        </svg>
+        Follow on Instagram
+      </a>`;
+
+    document.getElementById('artistModal').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeArtist() {
+    document.getElementById('artistModal').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  // close with Escape key
+  window.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeArtist();
+  });
+</script>
+
+<!-- ═══ ARTIST PROFILE MODAL ═══ -->
+<div class="artist-modal" id="artistModal">
+  <div class="modal-backdrop" onclick="closeArtist()"></div>
+  <div class="modal-panel">
+    <button class="modal-close" onclick="closeArtist()">✕ &nbsp;Close</button>
+
+    <!-- LEFT: photo -->
+    <div class="modal-left">
+      <span class="modal-index" id="mIndex">01 / 05</span>
+      <svg class="modal-brand-mark" viewBox="150 120 730 800" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M517.109 240.073C699.179 240.073 846.747 386.83 846.747 567.828C846.747 748.827 699.179 895.584 517.109 895.584C335.04 895.584 187.472 748.827 187.472 567.828C187.472 386.83 335.04 240.073 517.109 240.073Z" stroke="white" stroke-width="5.83429"/>
+<path d="M748.538 889.624H873.003L781.599 693.203H662.969L748.538 889.624Z" fill="white"/>
+<path d="M460.712 505.533H339.164L518.082 137L763.123 648.473H547.254L637.685 888.651L405.286 557.069H602.68L518.082 370.372L460.712 505.533Z" fill="white"/>
+<path d="M292.493 891.569H169L332.36 527.898L401.399 642.64L292.493 891.569Z" fill="white"/></svg>
+      <div class="modal-photo-area">
+        <div class="modal-photo-placeholder" id="mPhoto">
+          <span class="modal-ph-initials" id="mInitials">AD</span>
+          <span class="modal-ph-hint">Add Photo</span>
+        </div>
+      </div>
+      <div class="modal-bg-name" id="mBgName">AMAN</div>
+    </div>
+
+    <!-- RIGHT: info -->
+    <div class="modal-right">
+      <p class="modal-eyebrow" id="mEyebrow">Alphonics · Member</p>
+      <h2 class="modal-name" id="mName">Aman Vishal Dwivedi</h2>
+      <p class="modal-role" id="mRole">Lead Singer</p>
+      <span class="modal-rule"></span>
+      <p class="modal-bio" id="mBio"></p>
+      <div class="modal-tags" id="mTags"></div>
+      <div class="modal-socials" id="mSocials"></div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+// ── PWA: Inject manifest via blob URL ──
+(function() {
+  const manifest = {
+    name: "Alphonics — Sound Redefined",
+    short_name: "Alphonics",
+    description: "Delhi's own sound. Where acoustic soul collides with electric fury. Five voices. One frequency.",
+    start_url: "./",
+    display: "standalone",
+    orientation: "portrait",
+    background_color: "#060504",
+    theme_color: "#060504",
+    categories: ["music", "entertainment"],
+    icons: [
+      {
+        src: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTA4MCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTA4MCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNNTE3LjEwOSAyNDAuMDczQzY5OS4xNzkgMjQwLjA3MyA4NDYuNzQ3IDM4Ni44MyA4NDYuNzQ3IDU2Ny44MjhDODQ2Ljc0NyA3NDguODI3IDY5OS4xNzkgODk1LjU4NCA1MTcuMTA5IDg5NS41ODRDMzM1LjA0IDg5NS41ODQgMTg3LjQ3MiA3NDguODI3IDE4Ny40NzIgNTY3LjgyOEMxODcuNDcyIDM4Ni44MyAzMzUuMDQgMjQwLjA3MyA1MTcuMTA5IDI0MC4wNzNaIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjUuODM0MjkiLz4KPHBhdGggZD0iTTc0OC41MzggODg5LjYyNEg4NzMuMDAzTDc4MS41OTkgNjkzLjIwM0g2NjIuOTY5TDc0OC41MzggODg5LjYyNFoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik00NjAuNzEyIDUwNS41MzNIMzM5LjE2NEw1MTguMDgyIDEzN0w3NjMuMTIzIDY0OC40NzNINTQ3LjI1NEw2MzcuNjg1IDg4OC42NTFMNDA1LjI4NiA1NTcuMDY5SDYwMi42OEw1MTguMDgyIDM3MC4zNzJMNDYwLjcxMiA1MDUuNTMzWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTI5Mi40OTMgODkxLjU2OUgxNjlMMzMyLjM2IDUyNy44OThMNDAxLjM5OSA2NDIuNjRMMjkyLjQ5MyA4OTEuNTY5WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+",
+        sizes: "512x512",
+        type: "image/svg+xml",
+        purpose: "any maskable"
+      },
+      {
+        src: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTA4MCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTA4MCAxMDgwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNNTE3LjEwOSAyNDAuMDczQzY5OS4xNzkgMjQwLjA3MyA4NDYuNzQ3IDM4Ni44MyA4NDYuNzQ3IDU2Ny44MjhDODQ2Ljc0NyA3NDguODI3IDY5OS4xNzkgODk1LjU4NCA1MTcuMTA5IDg5NS41ODRDMzM1LjA0IDg5NS41ODQgMTg3LjQ3MiA3NDguODI3IDE4Ny40NzIgNTY3LjgyOEMxODcuNDcyIDM4Ni44MyAzMzUuMDQgMjQwLjA3MyA1MTcuMTA5IDI0MC4wNzNaIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjUuODM0MjkiLz4KPHBhdGggZD0iTTc0OC41MzggODg5LjYyNEg4NzMuMDAzTDc4MS41OTkgNjkzLjIwM0g2NjIuOTY5TDc0OC41MzggODg5LjYyNFoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik00NjAuNzEyIDUwNS41MzNIMzM5LjE2NEw1MTguMDgyIDEzN0w3NjMuMTIzIDY0OC40NzNINTQ3LjI1NEw2MzcuNjg1IDg4OC42NTFMNDA1LjI4NiA1NTcuMDY5SDYwMi42OEw1MTguMDgyIDM3MC4zNzJMNDYwLjcxMiA1MDUuNTMzWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTI5Mi40OTMgODkxLjU2OUgxNjlMMzMyLjM2IDUyNy44OThMNDAxLjM5OSA2NDIuNjRMMjkyLjQ5MyA4OTEuNTY5WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+",
+        sizes: "192x192",
+        type: "image/svg+xml",
+        purpose: "any maskable"
+      }
+    ],
+    screenshots: [
+      {
+        label: "Alphonics Home",
+        sizes: "390x844",
+        type: "image/png"
+      }
+    ]
+  };
+
+  const blob = new Blob([JSON.stringify(manifest)], { type: 'application/json' });
+  const url  = URL.createObjectURL(blob);
+  document.getElementById('manifest-placeholder').setAttribute('href', url);
+})();
+
+// ── PWA: Service Worker (inline via blob) ──
+if ('serviceWorker' in navigator) {
+  const swCode = `
+const CACHE = 'alphonics-v1';
+const ASSETS = ['/'];
+
+self.addEventListener('install', e => {
+  self.skipWaiting();
+  e.waitUntil(
+    caches.open(CACHE).then(cache => {
+      // Cache what we can — gracefully skip failures
+      return Promise.allSettled(ASSETS.map(url => cache.add(url).catch(() => {})));
+    })
+  );
+});
+
+self.addEventListener('activate', e => {
+  e.waitUntil(
+    caches.keys().then(keys =>
+      Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))
+    )
+  );
+  self.clients.claim();
+});
+
+self.addEventListener('fetch', e => {
+  // Network-first for navigation, cache-first for assets
+  if (e.request.mode === 'navigate') {
+    e.respondWith(
+      fetch(e.request).catch(() =>
+        caches.match(e.request).then(r => r || caches.match('/'))
+      )
+    );
+  } else {
+    e.respondWith(
+      caches.match(e.request).then(r => r || fetch(e.request).then(res => {
+        if (res && res.status === 200 && e.request.url.startsWith('http')) {
+          const clone = res.clone();
+          caches.open(CACHE).then(c => c.put(e.request, clone));
+        }
+        return res;
+      }).catch(() => {}))
+    );
+  }
+});
+  `;
+
+  const swBlob = new Blob([swCode], { type: 'application/javascript' });
+  const swURL  = URL.createObjectURL(swBlob);
+
+  navigator.serviceWorker.register(swURL, { scope: './' })
+    .then(reg => {
+      console.log('[Alphonics PWA] Service Worker registered:', reg.scope);
+    })
+    .catch(err => {
+      console.warn('[Alphonics PWA] SW registration failed:', err);
+    });
+}
+
+// ── PWA: Install prompt banner ──
+let deferredPrompt = null;
+
+window.addEventListener('beforeinstallprompt', e => {
+  e.preventDefault();
+  deferredPrompt = e;
+  showInstallBanner();
+});
+
+function showInstallBanner() {
+  const existing = document.getElementById('pwa-banner');
+  if (existing) return;
+
+  const banner = document.createElement('div');
+  banner.id = 'pwa-banner';
+  banner.innerHTML = `
+    <div class="pwa-banner-inner">
+      <div class="pwa-banner-icon"><svg class="modal-brand-mark" viewBox="150 120 730 800" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M517.109 240.073C699.179 240.073 846.747 386.83 846.747 567.828C846.747 748.827 699.179 895.584 517.109 895.584C335.04 895.584 187.472 748.827 187.472 567.828C187.472 386.83 335.04 240.073 517.109 240.073Z" stroke="white" stroke-width="5.83429"/>
+<path d="M748.538 889.624H873.003L781.599 693.203H662.969L748.538 889.624Z" fill="white"/>
+<path d="M460.712 505.533H339.164L518.082 137L763.123 648.473H547.254L637.685 888.651L405.286 557.069H602.68L518.082 370.372L460.712 505.533Z" fill="white"/>
+<path d="M292.493 891.569H169L332.36 527.898L401.399 642.64L292.493 891.569Z" fill="white"/></svg></div>
+      <div class="pwa-banner-text">
+        <strong>Alphonics</strong>
+        <span>Add to Home Screen</span>
+      </div>
+      <button class="pwa-install-btn" onclick="installPWA()">Install</button>
+      <button class="pwa-dismiss-btn" onclick="dismissBanner()">✕</button>
+    </div>
+  `;
+  document.body.appendChild(banner);
+
+  // Auto-dismiss after 12s
+  setTimeout(dismissBanner, 12000);
+}
+
+function installPWA() {
+  if (!deferredPrompt) return;
+  deferredPrompt.prompt();
+  deferredPrompt.userChoice.then(choice => {
+    if (choice.outcome === 'accepted') dismissBanner();
+    deferredPrompt = null;
+  });
+}
+
+function dismissBanner() {
+  const b = document.getElementById('pwa-banner');
+  if (b) { b.style.opacity = '0'; setTimeout(() => b.remove(), 300); }
+}
+
+window.addEventListener('appinstalled', () => {
+  dismissBanner();
+  console.log('[Alphonics PWA] Installed successfully!');
+});
+</script>
+
+<style>
+/* ── PWA Install Banner ── */
+#pwa-banner {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;
+  width: min(420px, calc(100vw - 2rem));
+  background: #111009;
+  border: 1px solid rgba(255,204,0,0.35);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.7);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.pwa-banner-inner {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.85rem 1rem;
+}
+.pwa-banner-icon {
+  width: 42px; height: 42px;
+  background: #060504;
+  border: 1px solid rgba(255,204,0,0.4);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Bebas Neue', serif;
+  font-size: 1.4rem;
+  color: #ffcc00;
+  flex-shrink: 0;
+}
+.pwa-banner-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+.pwa-banner-text strong {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  color: #f0ece4;
+}
+.pwa-banner-text span {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.46rem;
+  letter-spacing: 0.18em;
+  color: #9a9080;
+  text-transform: uppercase;
+}
+.pwa-install-btn {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.52rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  background: #ffcc00;
+  color: #060504;
+  border: none;
+  padding: 0.45rem 1rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  flex-shrink: 0;
+}
+.pwa-install-btn:hover { opacity: 0.85; }
+.pwa-dismiss-btn {
+  background: none;
+  border: none;
+  color: #9a9080;
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 0.3rem;
+  flex-shrink: 0;
+  transition: color 0.2s;
+}
+.pwa-dismiss-btn:hover { color: #f0ece4; }
+</style>
+
+</body>
+
+</html>
